@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EM-NEO 골프</title>
+    <meta name="description" content="EM-NEO 골프" />
+    <meta name="keywords" content="EM-NEO 골프" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/og.png" />
+    <meta property="og:title" content="EM-NEO 골프" />
+    <meta property="og:description" content="EM-NEO 골프" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/response.css" />
+    <script src="./js/swiper.8.4.7.js"></script>
+    <script src="./js/jquery.3.1.1.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container sign">
+        <section class="sign__title">
+          <h1 class="sign__title__logo-img">
+            <img src="./img/assets/logo.svg" alt="EM-NEO 로고" />
+          </h1>
+          <h6 class="sign__title__sub-title">회원가입을 해주세요.</h6>
+          <a class="signup__title__btn-back" href="./signin.html">
+            <span>
+              <img
+                src="./img/assets/ico_left_arrow_bar.svg"
+                alt="왼쪽 화살표 아이콘"
+              />
+            </span>
+            돌아가기
+          </a>
+
+          <div class="signup__cont__box">
+            <label for="golf">골프연습장</label>
+            <div>
+              <div class="address">
+                <input type="text" id="golf" placeholder="골프연습장" />
+                <button type="button">연습장 검색</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="signup__cont">
+          <p class="signup__cont__required-text">
+            <span class="signup__cont__required">*</span>
+            는 필수 사항입니다.
+          </p>
+
+          <div class="signup__cont__box">
+            <label for="name">성명</label>
+            <div>
+              <input type="text" id="name" placeholder="성명" />
+            </div>
+          </div>
+          <div class="signup__cont__box">
+            <label for="pn">전화번호</label>
+            <div>
+              <input type="text" id="pn" placeholder="전화번호" />
+            </div>
+          </div>
+          <!-- <div class="signup__cont__box">
+            <label for="username">아이디</label>
+            <div>
+              <input type="text" id="username" placeholder="아이디" />
+            </div>
+          </div>
+          <div class="signup__cont__box">
+            <label for="password">비밀번호</label>
+
+            <div>
+              <div class="password">
+                <input type="password" id="password" placeholder="비밀번호" />
+
+                <button class="signup__cont__box__btn-password" type="button">
+                  <img
+                    src="./img/assets/ico_password_show.svg"
+                    alt="패스워드 보기 아이콘"
+                  />
+                  <img
+                    src="./img/assets/ico_password_hide.svg"
+                    alt="패스워드 가리기 아이콘"
+                  />
+                </button>
+              </div>
+              <p>4자리 이상의 숫자 / 영문 조합으로 입력해주세요.</p>
+            </div>
+          </div> -->
+          <div class="signup__cont__box">
+            <label for="address">주소</label>
+            <div>
+              <div class="address">
+                <input type="text" id="detailAddress" placeholder="주소" />
+                <button type="button">주소 검색</button>
+              </div>
+              <input type="text" id="detailAddress" placeholder="상세 주소" />
+            </div>
+          </div>
+          <div class="signup__cont__box gender">
+            <label for="gender">성별</label>
+
+            <div class="gender">
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">남자</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">여자</label>
+              <p>
+                이용자는 선택적 개인정보 수립 및 이용을 거부할 권리가 있으며,
+                거부하실 경우, 온라인을 통한 회원가입을 신청할 수 없습니다.
+              </p>
+            </div>
+          </div>
+
+          <a href="./main.html" class="signup__cont__btn-box" type="button"
+            >회원가입</a
+          >
+        </section>
+      </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+  </body>
+</html>
