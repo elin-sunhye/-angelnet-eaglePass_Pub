@@ -37,27 +37,48 @@ $(document).on('click', '.tab-box__tab-top__btn-tab button', function () {
 // 타석예약 시간 타석 클릭
 $(document).on(
   'click',
-  '.tab-box__tab-cont > div .row .col:last-of-type',
+  '.tab-box__tab-cont > div .floor__row .floor__row__col:last-of-type',
   function () {
     if ($(this).text().trim() !== '이용중') {
-      // 모든 버튼에서 'on' 클래스 제거
-      $('.tab-box__tab-cont > div .row .col:last-of-type').removeClass('on');
-      // 클릭한 버튼에 'on' 클래스 추가
-      $(this).addClass('on');
+      if ($(this).hasClass('on')) {
+        // 클릭한 버튼에서 'on' 클래스 제거
+        $(this).removeClass('on');
+      } else {
+        // 모든 버튼에서 'on' 클래스 제거
+        $(
+          '.tab-box__tab-cont > div .floor__row .floor__row__col:last-of-type'
+        ).removeClass('on');
+        // 클릭한 버튼에 'on' 클래스 추가
+        $(this).addClass('on');
+      }
     }
   }
 );
 
 // 타석예약 이용중
 function used() {
-  $('.tab-box__tab-cont > div .row .col:last-of-type').each(function () {
-    if ($(this).text().trim() === '이용중') {
-      // 버튼 텍스트가 이용중이면
-      $(this).addClass('used'); // 사용중 클래스 추가
+  $('.tab-box__tab-cont > div .floor__row .floor__row__col:last-of-type').each(
+    function () {
+      if ($(this).text().trim() === '이용중') {
+        // 버튼 텍스트가 이용중이면
+        $(this).addClass('used'); // 사용중 클래스 추가
+      }
     }
-  });
+  );
 }
 used();
+
+// 타석예약 선택 이전 시간 체크
+function before() {
+  $('.tab-box__tab-cont > div .floor__row .floor__row__col:last-of-type').each(
+    function () {
+      if ($(this).find('span').length > 0) {
+        $(this).addClass('before');
+      }
+    }
+  );
+}
+before();
 
 // 타석예약 모달 열기
 $(document).on('click', '.btn-modal-pop-up', function () {
