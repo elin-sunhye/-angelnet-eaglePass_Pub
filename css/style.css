@@ -787,7 +787,7 @@ z .quick-menu-box__menu a span {
     width: 16px;
 }
 .modal_row {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .modal_row P:first-of-type {
     width: 80px;
@@ -822,7 +822,7 @@ z .quick-menu-box__menu a span {
 }
 .ck_red {
     color: red;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .btn_box {
     display: flex;
