@@ -110,14 +110,33 @@
                     <label>
                         <input type="date" name="schedule" />
                     </label>
-                    <label>
-                        <input
-                            type="time"
-                            name="schedule"
-                            min="08:00"
-                            max="12:00"
+                    <label class="time">
+                        <!-- <input type="time" name="schedule" step="3600" /> -->
+                        <select name="schedule">
+                            <option value="08:00">08시</option>
+                            <option value="09:00">09시</option>
+                            <option value="10:00">10시</option>
+                            <option value="11:00">11시</option>
+                            <option value="12:00">12시</option>
+                            <option value="13:00">13시</option>
+                            <option value="14:00">14시</option>
+                            <option value="15:00">15시</option>
+                            <option value="16:00">16시</option>
+                            <option value="17:00">17시</option>
+                            <option value="18:00">18시</option>
+                            <option value="19:00">19시</option>
+                            <option value="20:00">20시</option>
+                            <option value="21:00">21시</option>
+                            <option value="22:00">22시</option>
+                        </select>
+                        <img
+                            src="./img/assets/ico_select_time.svg"
+                            alt="시간"
                         />
                     </label>
+                    <button type="button" class="booking_search">
+                        타석 조회
+                    </button>
 
                     <div class="select-product">
                         <label>이용할 상품</label>
@@ -149,8 +168,18 @@
                         </div>
                     </div>
 
+                    <div class="tab-box__tab-cont-header">
+                        <div class="floor__row">
+                            <div class="floor__row__col">타석</div>
+                            <div class="floor__row__col">종료예정</div>
+                            <div class="floor__row__col">가능시간</div>
+                            <div class="floor__row__col">타석정보</div>
+                            <div class="floor__row__col">타 예약</div>
+                            <div class="floor__row__col">내 예약</div>
+                        </div>
+                    </div>
                     <div class="tab-box__tab-cont">
-                        <div class="floor-1 on">
+                        <!-- <div class="floor-1 on">
                             <div class="floor__row">
                                 <div class="floor__row__col">01</div>
                                 <div class="floor__row__col">
@@ -626,12 +655,769 @@
                                     <button type="button">20:00</button>
                                 </div>
                             </div>
+                        </div> -->
+
+                        <div class="floor-1 on">
+                            <div class="floor__row">
+                                <div class="floor__row__col">1</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">2</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button">14:10</button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">3</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">40분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">4</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">5</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">6</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">7</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">8</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">9</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">10</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">11</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">12</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">13</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">14</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">50분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">15</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">16</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">17</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">50분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">18</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">50분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">19</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">20</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">21</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">50분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">22</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">23</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">24</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">25</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floor-2">
+                            <div class="floor__row">
+                                <div class="floor__row__col">26</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">27</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">28</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">29</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">30</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">31</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">32</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">33</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">34</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">35</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">36</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">37</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">38</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">39</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">40</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">41</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">42</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">43</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">44</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">45</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">46</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">47</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">48</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">49</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">50</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floor-3">
+                            <div class="floor__row">
+                                <div class="floor__row__col">51</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">52</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">53</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">54</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">55</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">56</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">57</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">58</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">59</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">60</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">61</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">62</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">63</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">64</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">65</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">66</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">67</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">68</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">69</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">70</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">71</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">가능</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">72</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">73</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">30분 이용</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">74</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="floor__row">
+                                <div class="floor__row__col">75</div>
+                                <div class="floor__row__col">13:00</div>
+                                <div class="floor__row__col">13:10</div>
+                                <div class="floor__row__col">불가</div>
+                                <div class="floor__row__col"></div>
+                                <div class="floor__row__col">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- popup -->
-                <div class="pop-up">
+                <!-- 배치도 popup -->
+                <div class="pop-up position">
                     <div class="pop-up__inner">
                         <h6 class="pop-up__title">
                             배치도
@@ -651,6 +1437,75 @@
                                 src="./img/assets/img_bat.svg"
                                 alt="타석 이미지"
                             />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 내 예약 popup -->
+                <div class="pop-up my-booking">
+                    <div class="pop-up__inner">
+                        <h6 class="pop-up__title">
+                            타석 예약
+                            <button
+                                type="button"
+                                class="btn-modal-pop-up-close"
+                            >
+                                <img
+                                    src="./img/assets/ico_close.svg"
+                                    alt="닫기 아이콘"
+                                />
+                            </button>
+                        </h6>
+
+                        <div class="pop-up__cont">
+                            <div class="modal_row">
+                                <p class="modal_col">타석번호</p>
+                                <p class="modal_col">1층</p>
+                                <p class="modal_col">4</p>
+                            </div>
+                            <div class="modal_row">
+                                <p class="modal_col">예약 일시</p>
+                                <div class="time_box">
+                                    <button type="button">14:00</button>
+                                    <button type="button">14:10</button>
+                                    <button type="button" class="on">
+                                        14:20
+                                    </button>
+                                    <button type="button">14:30</button>
+                                    <button type="button">14:40</button>
+                                    <button type="button">14:50</button>
+                                    <button type="button">15:00</button>
+                                    <button type="button">15:10</button>
+                                    <button type="button">15:20</button>
+                                    <button type="button">15:30</button>
+                                    <button type="button">15:40</button>
+                                    <button type="button">15:50</button>
+                                </div>
+                            </div>
+                            <div class="modal_row">
+                                <p class="modal_col">확정일시</p>
+                                <p class="modal_col">2025-04-02 14:20</p>
+                            </div>
+
+                            <p class="ck_red">
+                                예약 후 반드시 예약확인 메뉴에서 확정된 예약을
+                                확인하세요.
+                            </p>
+
+                            <div class="btn_box">
+                                <button
+                                    type="button"
+                                    class="btn-modal-pop-up-close"
+                                >
+                                    취소
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn-modal-pop-up-close"
+                                >
+                                    예약
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
