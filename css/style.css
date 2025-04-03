@@ -463,6 +463,70 @@ z .quick-menu-box__menu a span {
 
     margin-bottom: 20px;
 }
+.search-box .booking_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+}
+.search-box .booking_date > div {
+    width: calc(100% / 7);
+}
+.search-box .booking_date p {
+    text-align: center;
+}
+.search-box .booking_date p:nth-of-type(2) {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* background-color: #333; */
+    margin-top: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-box .booking_date p.sat {
+    color: #1f71ff;
+}
+.search-box .booking_date p.sun {
+    color: rgb(255, 48, 48);
+}
+.search-box .booking_date p:nth-of-type(2).on {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.search-box .booking_time_box {
+    width: 100%;
+    overflow-x: auto;
+}
+.search-box .booking_time_box .scroll {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    width: 1300px;
+}
+
+.search-box .booking_time_box .scroll button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+
+    /* color: var(--gray-2); */
+    font-size: 1.3rem;
+
+    text-align: center;
+
+    background-color: white;
+}
+.search-box .booking_time_box .scroll button.on {
+    background-color: var(--main-color);
+    color: white;
+}
 .search-box label {
     border-radius: 5px;
 
@@ -661,6 +725,7 @@ z .quick-menu-box__menu a span {
     font-weight: 500;
     box-sizing: border-box;
     padding: 10px 5px;
+    font-size: 1rem;
 }
 .tab-box__tab-cont > div .floor__row .floor__row__col {
     border-right: 1px solid var(--gray-3);
@@ -780,6 +845,7 @@ z .quick-menu-box__menu a span {
 
     width: 100%;
 
+    font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
 }
@@ -818,17 +884,28 @@ z .quick-menu-box__menu a span {
     overflow-x: auto;
 }
 .modal_row .time_box .scroll {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
     padding: 10px 0;
-    width: 1003px;
+    width: 1300px;
+}
+.modal_row .modal_col {
+    font-size: 1.1rem;
+}
+.modal_row .modal_col:first-of-type {
+    font-size: 1.3rem;
 }
 /* .modal_row:first-of-type .modal_col:not(:first-of-type), */
 .modal_row.time .time_box button {
-    width: 80px;
+    width: 100px;
     height: 40px;
     border: 1px solid var(--gray-3);
     border-radius: 5px;
 
     color: var(--gray-2);
+    font-size: 1.3rem;
 
     text-align: center;
 }
@@ -840,6 +917,8 @@ z .quick-menu-box__menu a span {
 .ck_red {
     color: red;
     margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1.1;
 }
 .btn_box {
     display: flex;
@@ -853,6 +932,7 @@ z .quick-menu-box__menu a span {
     height: 40px;
     border-radius: 5px;
     color: white;
+    font-size: 1.3rem;
     background-color: var(--main-color);
 }
 

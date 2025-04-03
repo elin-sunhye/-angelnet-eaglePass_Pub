@@ -19,6 +19,44 @@ $(document).on(
     }
 );
 
+// 타석 예약 날짜
+function textCk() {
+    $('.search-box .booking_date p').each(function () {
+        if ($(this).text().includes('토')) {
+            // 버튼 텍스트가 토
+            $(this).addClass('sat'); // 사용중 클래스 추가
+        }
+
+        if ($(this).text().includes('일')) {
+            // 버튼 텍스트가 일
+            $(this).addClass('sun'); // 사용중 클래스 추가
+        }
+    });
+}
+textCk();
+
+$(document).on(
+    'click',
+    '.search-box .booking_date p:nth-of-type(2)',
+    function () {
+        // 모든 버튼에서 'on' 클래스 제거
+        $('.search-box .booking_date p:nth-of-type(2)').removeClass('on');
+        // 클릭한 버튼에 'on' 클래스 추가
+        $(this).addClass('on');
+    }
+);
+
+$(document).on(
+    'click',
+    '.search-box .booking_time_box .scroll button',
+    function () {
+        // 모든 버튼에서 'on' 클래스 제거
+        $('.search-box .booking_time_box .scroll button').removeClass('on');
+        // 클릭한 버튼에 'on' 클래스 추가
+        $(this).addClass('on');
+    }
+);
+
 // 타석예약 층 탭
 $(document).on('click', '.tab-box__tab-top__btn-tab button', function () {
     // 모든 버튼에서 'on' 클래스 제거
