@@ -753,6 +753,11 @@ z .quick-menu-box__menu a span {
 
     width: 100%;
     height: 100vh;
+
+    /* backdrop-filter: blur(5px); */
+    background-color: #cccccc94;
+
+    /* z-index: 999999; */
 }
 .pop-up__inner {
     position: absolute;
@@ -790,35 +795,47 @@ z .quick-menu-box__menu a span {
     margin-bottom: 20px;
 }
 .modal_row P:first-of-type {
-    width: 80px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-right: 10px;
+    /* width: 200px; */
 }
-.modal_row:first-of-type,
-.modal_row:nth-of-type(3) {
+.modal_row.position,
+.modal_row.check {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+}
+
+.modal_row.time {
+    border-bottom: 1px solid var(--gray-3);
+    padding-bottom: 15px;
 }
 .modal_row .time_box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-
+    width: 100%;
     margin-top: 5px;
+    overflow-x: auto;
 }
-.modal_row:first-of-type .modal_col:not(:first-of-type),
-.modal_row:nth-of-type(2) .time_box button {
-    width: 60px;
-    height: 20px;
+.modal_row .time_box .scroll {
+    padding: 10px 0;
+    width: 1003px;
+}
+/* .modal_row:first-of-type .modal_col:not(:first-of-type), */
+.modal_row.time .time_box button {
+    width: 80px;
+    height: 40px;
     border: 1px solid var(--gray-3);
     border-radius: 5px;
 
+    color: var(--gray-2);
+
     text-align: center;
 }
-.modal_row:nth-of-type(2) .time_box button.on {
-    background-color: var(--sub-color-pink);
+.modal_row.time .time_box button.on {
+    color: var(--white);
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
 }
 .ck_red {
     color: red;
@@ -829,17 +846,13 @@ z .quick-menu-box__menu a span {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .btn_box button {
-    width: 60px;
-    height: 30px;
+    width: 100%;
+    height: 40px;
     border-radius: 5px;
-}
-.btn_box button:first-of-type {
-    background-color: var(--gray-3);
-}
-.btn_box button:nth-of-type(2) {
+    color: white;
     background-color: var(--main-color);
 }
 

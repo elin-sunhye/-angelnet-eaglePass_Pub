@@ -106,6 +106,12 @@ $(document).on(
     }
 );
 
+// 내 예약 시간 선택
+$(document).on('click', '.modal_row.time .time_box button', function () {
+    $('.modal_row.time .time_box button').removeClass('on'); // 'open' 클래스 삭제
+    $(this).addClass('on');
+});
+
 // 내 예약 모달 닫기
 $(document).on('click', '.btn-modal-pop-up-close', function () {
     $(
