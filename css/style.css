@@ -508,11 +508,11 @@ z .quick-menu-box__menu a span {
     align-items: center;
     gap: 10px;
     padding: 10px 0;
-    width: 1300px;
+    width: 800px;
 }
 
 .search-box .booking_time_box .scroll button {
-    width: 100px;
+    width: 63px;
     height: 40px;
     border-radius: 5px;
 
@@ -694,28 +694,28 @@ z .quick-menu-box__menu a span {
 
 .tab-box__tab-cont-header .floor__row .floor__row__col:first-of-type,
 .tab-box__tab-cont > div .floor__row .floor__row__col:first-of-type {
-    width: 10%;
+    width: 12%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(2),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(2) {
-    width: 18%;
+    width: 22%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(3),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(3) {
-    width: 18%;
+    width: 22%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(4),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(4) {
-    width: 18%;
+    width: 22%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(5),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(5) {
-    width: 18%;
+    width: 22%;
 }
-.tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(6),
+/* .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(6),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(6) {
     width: 18%;
-}
+} */
 .tab-box__tab-cont-header .floor__row .floor__row__col,
 .tab-box__tab-cont > div .floor__row .floor__row__col,
 .tab-box__tab-cont > div .floor__row .floor__row__col button {
@@ -734,7 +734,7 @@ z .quick-menu-box__menu a span {
     border-left: 1px solid var(--gray-3);
 }
 
-.tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(4) {
+.tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(3) {
     background-color: var(--sub-color-blue);
 }
 
