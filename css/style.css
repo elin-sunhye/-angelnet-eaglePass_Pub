@@ -528,9 +528,12 @@ z .quick-menu-box__menu a span {
 
     background-color: white;
 }
-.search-box .booking_time_box .scroll button.on,
-.search-box .booking_bun_box .scroll button.on {
+.search-box .booking_time_box .scroll button.on {
     background-color: var(--main-color);
+    color: white;
+}
+.search-box .booking_bun_box .scroll button.on {
+    background-color: var(--sub-color-blue);
     color: white;
 }
 .search-box label {
