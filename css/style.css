@@ -498,11 +498,13 @@ z .quick-menu-box__menu a span {
     color: white;
 }
 
-.search-box .booking_time_box {
+.search-box .booking_time_box,
+.search-box .booking_bun_box {
     width: 100%;
     overflow-x: auto;
 }
-.search-box .booking_time_box .scroll {
+.search-box .booking_time_box .scroll,
+.search-box .booking_bun_box .scroll {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -510,8 +512,11 @@ z .quick-menu-box__menu a span {
     padding: 10px 0;
     width: 800px;
 }
-
-.search-box .booking_time_box .scroll button {
+.search-box .booking_bun_box .scroll {
+    width: 100%;
+}
+.search-box .booking_time_box .scroll button,
+.search-box .booking_bun_box .scroll button {
     width: 63px;
     height: 40px;
     border-radius: 5px;
@@ -523,7 +528,8 @@ z .quick-menu-box__menu a span {
 
     background-color: white;
 }
-.search-box .booking_time_box .scroll button.on {
+.search-box .booking_time_box .scroll button.on,
+.search-box .booking_bun_box .scroll button.on {
     background-color: var(--main-color);
     color: white;
 }

@@ -57,6 +57,17 @@ $(document).on(
     }
 );
 
+$(document).on(
+    'click',
+    '.search-box .booking_bun_box .scroll button',
+    function () {
+        // 모든 버튼에서 'on' 클래스 제거
+        $('.search-box .booking_bun_box .scroll button').removeClass('on');
+        // 클릭한 버튼에 'on' 클래스 추가
+        $(this).addClass('on');
+    }
+);
+
 // 타석예약 층 탭
 $(document).on('click', '.tab-box__tab-top__btn-tab button', function () {
     // 모든 버튼에서 'on' 클래스 제거
