@@ -96,10 +96,10 @@ header .right {
 
     font-size: 13px;
     font-weight: 700;
-    color: var(--gray-2);
+    color: var(--black);
 }
 .navigation-bar__list li a.click {
-    color: var(--sub-color-pink);
+    /* color: var(--sub-color-pink); */
 }
 .navigation-bar__list li a span {
     display: block;

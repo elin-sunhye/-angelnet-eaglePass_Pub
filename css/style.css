@@ -246,7 +246,9 @@ input {
     height: 280px;
     overflow: hidden;
 
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
+    background: url('../img/assets/img_main_visual_1.svg') no-repeat center
+        center / cover;
 }
 .golf-club__img {
     position: absolute;
@@ -262,7 +264,10 @@ input {
     height: 100%;
 }
 .golf-club__info {
+    width: 100%;
     margin-bottom: 40px;
+    /* 좌우 정렬 */
+    text-align: right;
 }
 .golf-club__info p {
     color: var(--white);
@@ -293,7 +298,8 @@ input {
 }
 
 .notice_box .chip {
-    background-color: var(--sub-color-blue);
+    /* background-color: var(--sub-color-blue); */
+    color: #4475a2;
 }
 
 .notice_box .notice_list p:not(:last-of-type) {
@@ -322,15 +328,15 @@ input {
     box-sizing: border-box;
     border-radius: 50px;
     margin-bottom: 10px;
-    padding: 2px 10px;
+    /* padding: 2px 10px; */
 
-    font-size: 15px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
-    font-weight: bold;
-    color: var(--white);
+    font-weight: bolder;
+    color: #a24445;
 
-    background-color: var(--sub-color-pink);
+    /* background-color: var(--sub-color-pink); */
 }
 .membership__row {
     display: flex;
@@ -441,17 +447,56 @@ z .quick-menu-box__menu a span {
     width: 26px;
 }
 .quick-menu-box__menu a:first-of-type {
+    position: relative;
+
     width: 100%;
 
     font-size: 22px;
     color: var(--white);
 
     background-color: #bc332d;
+    overflow: hidden;
 }
 .quick-menu-box__menu a:first-of-type span {
     display: inline-block;
 
+    margin-left: -130px;
+
     width: 65px;
+}
+.quick-menu-box__menu a:first-of-type span.ico_arrow_booking {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 70px;
+    height: 100%;
+
+    background-color: var(--white);
+}
+.quick-menu-box__menu a:first-of-type span.ico_arrow_booking::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid var(--white);
+    border-top: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-right: 40px solid var(--white);
+
+    position: absolute;
+    right: 70px;
+}
+.quick-menu-box__menu a:first-of-type span.ico_arrow_booking img {
+    display: inline-block;
+
+    position: absolute;
+    right: 70%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+
+    width: 40%;
+    height: auto;
 }
 
 /* booking */
@@ -495,7 +540,7 @@ z .quick-menu-box__menu a span {
 }
 .search-box .booking_date p:nth-of-type(2).on {
     background-color: var(--main-color);
-    color: white;
+    /* color: white; */
 }
 
 .search-box .booking_time_box,
@@ -530,11 +575,11 @@ z .quick-menu-box__menu a span {
 }
 .search-box .booking_time_box .scroll button.on {
     background-color: var(--main-color);
-    color: white;
+    /* color: white; */
 }
 .search-box .booking_bun_box .scroll button.on {
     background-color: var(--sub-color-blue);
-    color: white;
+    /* color: white; */
 }
 .search-box label {
     border-radius: 5px;
@@ -651,7 +696,7 @@ z .quick-menu-box__menu a span {
 
     width: 70px;
 
-    color: var(--white);
+    color: var(--black);
 
     background-color: var(--sub-color-pink);
 }
