@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eagle Pass 골프</title>
+        <meta name="description" content="Eagle Pass 골프" />
+        <meta name="keywords" content="Eagle Pass 골프" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./img/og.png" />
+        <meta property="og:title" content="Eagle Pass 골프" />
+        <meta property="og:description" content="Eagle Pass 골프" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/response.css" />
+
+        <script src="./js/jquery.3.1.1.js"></script>
+    </head>
+    <body>
+        <div class="invoice-wrap">
+            <table class="title-box">
+                <colgroup>
+                    <col width="30%" />
+                    <col width="70%" />
+                </colgroup>
+
+                <tbody>
+                    <tr>
+                        <td colspan="2"><p>전자세금계산서</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>승인번호</p></td>
+                        <td><p></p></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="sender-reciever-box">
+                <table>
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="30%" />
+                        <col width="50%" />
+                    </colgroup>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="8"><p>공급자</p></td>
+                            <td><p>등록번호</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>종사업장번호</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>상호</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>성명</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>사업장</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>업태</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>종목</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>이메일</p></td>
+                            <td><p></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="30%" />
+                        <col width="50%" />
+                    </colgroup>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="9"><p>공급 받는자</p></td>
+                            <td><p>등록번호</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>종사업장번호</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>상호</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>성명</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>사업장</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>업태</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>종목</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>이메일</p></td>
+                            <td><p></p></td>
+                        </tr>
+                        <tr>
+                            <td><p>이메일</p></td>
+                            <td><p></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <table class="summary-box">
+                <colgroup>
+                    <col width="30%" />
+                    <col width="70%" />
+                </colgroup>
+
+                <tbody>
+                    <tr>
+                        <td><p>작성일자</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>공급가액</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>세액</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>수정사유</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>비고</p></td>
+                        <td><p></p></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="detail-box">
+                <colgroup>
+                    <col width="30%" />
+                    <col width="20%" />
+                    <col width="30%" />
+                    <col width="20%" />
+                </colgroup>
+
+                <tbody>
+                    <tr>
+                        <td><p>월</p></td>
+                        <td><p></p></td>
+                        <td><p>일</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>품목</p></td>
+                        <td colspan="3"><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>수량</p></td>
+                        <td colspan="3"><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>단가</p></td>
+                        <td colspan="3"><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>공급가액</p></td>
+                        <td colspan="3"><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>세액</p></td>
+                        <td colspan="3"><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>비고</p></td>
+                        <td colspan="3"><p></p></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="total-box">
+                <colgroup>
+                    <col width="30%" />
+                    <col width="70%" />
+                </colgroup>
+
+                <tbody>
+                    <tr>
+                        <td><p>합계급액</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>현금</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>수표</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>어음</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>외상미수금</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p>이 금액을 (청구)함</p></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="result-box">
+                <colgroup>
+                    <col width="30%" />
+                    <col width="70%" />
+                </colgroup>
+
+                <tbody>
+                    <tr>
+                        <td><p>발행일</p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>국세청전송결과</p></td>
+                        <td><p></p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
