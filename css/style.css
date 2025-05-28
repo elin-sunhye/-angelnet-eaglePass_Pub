@@ -1295,13 +1295,15 @@ z .quick-menu-box__menu a span {
 }
 
 .invoice-wrap table tr td {
-    padding: 10px 5px;
+    padding: 20px 10px;
     border-right: 1px solid var(--gray-3);
     box-sizing: border-box;
 }
 
 .invoice-wrap table tr td p {
     width: 100%;
+    height: 18px;
+    font-size: 18px;
     color: #888;
 }
 
@@ -1312,7 +1314,8 @@ z .quick-menu-box__menu a span {
     background-color: var(--main-color);
 }
 .invoice-wrap .title-box tr:first-of-type td p {
-    font-size: 18px;
+    height: 33px;
+    font-size: 33px;
     font-weight: bold;
     color: var(--white);
 
@@ -1398,4 +1401,37 @@ z .quick-menu-box__menu a span {
     tr:first-of-type
     td:first-of-type {
     background-color: #4475a247;
+}
+
+/* invoice web */
+.invoice-wrap.web .sender-reciever-box {
+    display: flex;
+}
+.invoice-wrap.web .result-box tr:first-of-type,
+.invoice-wrap.web .total-box tr:first-of-type,
+.invoice-wrap.web .detail-box tr:first-of-type,
+.invoice-wrap.web .summary-box tr:first-of-type {
+    background-color: var(--gray-4);
+    color: var(--black);
+}
+.invoice-wrap.web .result-box tr:first-of-type td p,
+.invoice-wrap.web .total-box tr:first-of-type td p,
+.invoice-wrap.web .detail-box tr:first-of-type td p,
+.invoice-wrap.web .summary-box tr:first-of-type td p {
+    color: var(--black);
+    text-align: center;
+}
+
+.invoice-wrap.web .result-box tr:nth-of-type(2) td,
+.invoice-wrap.web .total-box tr:nth-of-type(2) td,
+.invoice-wrap.web .detail-box tr:nth-of-type(2) td,
+.invoice-wrap.web .summary-box tr:nth-of-type(2) td {
+    background-color: var(--white);
+}
+.invoice-wrap.web .result-box tr:nth-of-type(2) td p,
+.invoice-wrap.web .total-box tr:nth-of-type(2) td p,
+.invoice-wrap.web .detail-box tr:nth-of-type(2) td p,
+.invoice-wrap.web .summary-box tr:nth-of-type(2) td p {
+    color: #888;
+    text-align: center;
 }
