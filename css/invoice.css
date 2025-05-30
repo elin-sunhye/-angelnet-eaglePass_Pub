@@ -1,0 +1,175 @@
+/* 공통 */
+img {
+    display: inline-block;
+
+    width: 100%;
+    height: auto;
+}
+input {
+    border: 0;
+    outline: none;
+}
+
+/* invoice */
+.invoice-wrap {
+    box-sizing: border-box;
+
+    width: 100vw;
+    height: 100%;
+
+    border: 2px solid var(--gray-3);
+}
+.invoice-wrap table tr {
+    border-top: 1px solid var(--gray-3);
+}
+.invoice-wrap > table:first-of-type,
+.invoice-wrap table tr:first-of-type {
+    border-top: none;
+}
+
+.invoice-wrap table {
+    font-size: 13px;
+    border-top: 3px solid var(--gray-3);
+}
+
+.invoice-wrap table tr td {
+    padding: 20px 10px;
+    border-right: 1px solid var(--gray-3);
+    box-sizing: border-box;
+}
+
+.invoice-wrap table tr td p {
+    width: 100%;
+    height: 18px;
+    font-size: 18px;
+    color: #888;
+}
+
+.invoice-wrap .title-box {
+    width: 100%;
+}
+.invoice-wrap .title-box tr:first-of-type td {
+    background-color: var(--main-color);
+}
+.invoice-wrap .title-box tr:first-of-type td p {
+    height: 33px;
+    font-size: 33px;
+    font-weight: bold;
+    color: var(--white);
+
+    text-align: left !important;
+}
+
+.invoice-wrap .total-box tr:last-of-type td p {
+    color: #888;
+}
+
+/* text-align: center */
+.invoice-wrap > table tr td:first-of-type p,
+.invoice-wrap > table tr td:nth-of-type(3) p,
+.invoice-wrap .title-box tr:last-of-type td:first-of-type p,
+.invoice-wrap
+    .sender-reciever-box
+    table
+    tr:first-of-type
+    td:not(:last-of-type)
+    p,
+.invoice-wrap
+    .sender-reciever-box
+    table
+    tr:not(:first-of-type)
+    td:not(:last-of-type)
+    p {
+    text-align: center;
+    color: var(--black);
+}
+
+/* color */
+.invoice-wrap
+    .sender-reciever-box
+    table:first-of-type
+    tr:first-of-type
+    td:not(:last-of-type)
+    p,
+.invoice-wrap
+    .sender-reciever-box
+    table:first-of-type
+    tr:not(:first-of-type)
+    td:not(:last-of-type)
+    p {
+    color: #a24445;
+}
+
+.invoice-wrap
+    .sender-reciever-box
+    table:last-of-type
+    tr:first-of-type
+    td:not(:last-of-type)
+    p,
+.invoice-wrap
+    .sender-reciever-box
+    table:last-of-type
+    tr:not(:first-of-type)
+    td:not(:last-of-type)
+    p {
+    color: #4475a2;
+}
+
+/* backgroud */
+.invoice-wrap .result-box tr td:first-of-type,
+.invoice-wrap .total-box tr:not(:last-of-type) td:first-of-type,
+.invoice-wrap .detail-box tr td:nth-of-type(3),
+.invoice-wrap .detail-box tr td:first-of-type,
+.invoice-wrap .summary-box tr td:first-of-type,
+.invoice-wrap .title-box tr:last-of-type td:first-of-type {
+    background-color: var(--gray-4);
+}
+
+.invoice-wrap
+    .sender-reciever-box
+    table:first-of-type
+    tr:first-of-type
+    td:first-of-type {
+    background-color: #a2444647;
+}
+
+.invoice-wrap
+    .sender-reciever-box
+    table:last-of-type
+    tr:first-of-type
+    td:first-of-type {
+    background-color: #4475a247;
+}
+
+/* invoice web */
+.invoice-wrap.web .sender-reciever-box {
+    display: flex;
+}
+.invoice-wrap.web .result-box tr:first-of-type,
+.invoice-wrap.web .total-box tr:first-of-type,
+.invoice-wrap.web .detail-box tr:first-of-type,
+.invoice-wrap.web .summary-box tr:first-of-type {
+    background-color: var(--gray-4);
+    color: var(--black);
+}
+.invoice-wrap.web .result-box tr:first-of-type td p,
+.invoice-wrap.web .total-box tr:first-of-type td p,
+.invoice-wrap.web .detail-box tr:first-of-type td p,
+.invoice-wrap.web .summary-box tr:first-of-type td p {
+    color: var(--black);
+    text-align: center;
+}
+
+.invoice-wrap.web .result-box tr:nth-of-type(2) td,
+.invoice-wrap.web .total-box tr:nth-of-type(2) td,
+.invoice-wrap.web .detail-box tr:nth-of-type(2) td,
+.invoice-wrap.web .summary-box tr:nth-of-type(2) td {
+    background-color: var(--white);
+}
+.invoice-wrap.web .result-box tr:nth-of-type(2) td p,
+.invoice-wrap.web .total-box tr:nth-of-type(2) td p,
+.invoice-wrap.web .detail-box tr:nth-of-type(2) td p,
+.invoice-wrap.web .summary-box tr:nth-of-type(2) td p {
+    color: #888;
+    text-align: center;
+}
