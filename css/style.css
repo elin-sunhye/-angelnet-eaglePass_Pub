@@ -1271,3 +1271,109 @@ z .quick-menu-box__menu a span {
     color: var(--white);
     background-color: var(--main-color);
 }
+
+.footer-link {
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: #666;
+}
+
+.footer-text {
+    margin-bottom: 5px;
+    font-size: 14px;
+    /* color: #999; */
+}
+
+/* 티켓 css*/
+.ticket {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+    margin: 5px auto;
+    background: #fff;
+    position: relative;
+
+    border: none; /* ✅ 검정 테두리 제거 */
+    border-radius: 10px; /* ✅ 각지게 */
+    overflow: hidden;
+}
+/* ✅ 양쪽 중앙 둥근 파임 */
+.ticket::before,
+.ticket::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #f6f6f6; /* 배경색과 동일하게 */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* 왼쪽 색 블록 */
+.ticket-left {
+    background-color: #97af8f;
+    width: 50px;
+    min-height: 30px;
+    position: relative;
+}
+.ticket::before {
+    left: -15px;
+}
+
+.ticket::after {
+    right: -15px;
+}
+
+/*  점선 추가 */
+.ticket-left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    border-right: 2px dashed #f0fff0;
+}
+
+/* 오른쪽 내용 영역 */
+.ticket-right {
+    flex-grow: 1;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 텍스트 구성 */
+.route {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.to {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.time {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    gap: 2px;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 12px;
+    color: red;
+}

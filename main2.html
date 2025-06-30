@@ -1,0 +1,336 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="/include/jsp/globals.jsp"%>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eagle Pass 골프</title>
+    <meta name="description" content="EM-NEO 골프" />
+    <meta name="keywords" content="EM-NEO 골프" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/og.png" />
+    <meta property="og:title" content="EM-NEO 골프" />
+    <meta property="og:description" content="EM-NEO 골프" />
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/resources/css/common.css" />
+    <link rel="stylesheet" href="/resources/css/style.css" />
+    <script src="/resources/js/jquery.3.1.1.js"></script>
+    <script src="/resources/js/bootstrap.bundle.min.js"></script>
+    <script src="/resources/js/common.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="main">
+        <h1>
+          <img src="/resources/img/assets/logo_white_1.svg" alt="로고 화이트 이미지" />
+        </h1>
+        <div class="right">
+          <a href="/app/myPage.do">
+            <img src="/resources/img/assets/ico_setting_white.svg" alt="설정아이콘" />
+          </a>
+          <!-- <a href="javascript:serviceAlert()">
+            <img src="/resources/img/assets/ico_alert.svg" alt="알림 아이콘" />
+          </a> -->
+        </div>
+      </header>
+
+      
+      <div class="container2 golf-club">
+       
+        <div class="golf-club__info">
+          <p> ${memberInfo.DrivingRangeNameKr}</p>
+          <p><span>${memberInfo.Address}</span></p>
+        </div>
+      </div>
+	  <div class="container2 bottom">
+	      
+	
+	      <div class="quick-menu-box">
+	        <!-- <div class="quick-menu-box__transfer">
+	          <span
+	            ><img src="/resources/img/assets/ico_purchase.svg" alt="티켓 아이콘"
+	          /></span>
+	          <p>남아있는 쿠폰은 양도가 가능합니다.</p>
+	          <button type="button">양도하기</button>
+	        </div> -->
+	
+	        <div class="quick-menu-box__menu">
+	          <a href="booking.do">
+                  <span
+                      ><img
+                          src="/resources/img/assets/ico_booking_2.svg"
+                          alt="타석 예약 아이콘"
+                  /></span>
+                  타석예약
+                  <span
+                  class="ico_arrow_booking"
+                      ><img
+                          src="/resources/img/assets/ico_double_arrow.svg"
+                          alt="화실표 아이콘"
+                  /></span>
+              </a>
+	          <a href="checkin.do">
+	            <span
+	              ><img
+	                src="/resources/img/assets/ico_main_checkin_2.svg"
+	                alt="체크인 아이콘"
+	            /></span>
+	            체크인
+	          </a>
+	          <a href="bookingManagement.do">
+                <span
+                    ><img
+                        src="/resources/img/assets/ico_main_booking_check_2.svg"
+                        alt="예약확인 아이콘"
+                /></span>
+                     예약확인
+              </a>
+              <a href="purchase.do">
+	            <span
+	              ><img
+	                src="/resources/img/assets/ico_main_purchase_2.svg"
+	                alt="구매내역 아이콘"
+	            /></span>
+	            구매내역
+	          </a>
+              <a href="use.do">
+	            <span
+	              ><img src="/resources/img/assets/ico_main_use_2.svg" 
+	              		alt="이용내역 아이콘"
+	            /></span>
+	            이용내역
+	          </a>
+	          <a href="javascript:serviceAlert('서비스 준비 중입니다.')">
+	          <!-- <a href="product.do">  -->
+	            <span
+	              ><img
+	                src="/resources/img/assets/ico_main_product_2.svg"
+	                alt="상품구매 아이콘"
+	            /></span>
+	            상품구매
+	          </a>
+	          
+	          <a href="notice.do">
+	              <span
+	                  ><img
+	                      src="/resources/img/assets/ico_main_notice_2.svg"
+	                      alt="공지사항 아이콘"
+	              /></span>
+	              공지사항
+	          </a>
+	          
+	        </div>
+	      </div>
+	      
+	      <div class="notice_box">
+              <p class="chip">공지사항</p>
+              <div class="notice_list">
+			  	<p style="font-size:14px; white-space: normal; word-wrap: break-word;">${environment.Notice}</p>
+              </div>
+          </div>
+	
+	
+	      <div class="membership">
+		    <p class="chip">이용중인 상품</p>
+		    <c:choose>
+		        <c:when test="${not empty membershipList}">
+		            <c:forEach var="sale" items="${membershipList}">
+		                <div class="membership__row" style="flex-direction: column; align-items: flex-start;">
+		                    <c:if test="${sale.DisabledYn == 'Y'}">
+		                       
+		                        <%-- <p class="membership__row__col" style="opacity: 0.5; font-size:14px;">${sale.ProductName}</p> 
+		                        <p class="membership__row__col" style="opacity: 0.5; font-size:12px;">만료일: ${sale.ValidDate}
+		                            <c:if test="${sale.MobileBookingAvailable == 0}">
+		                                <span style="color: red; font-size: 12px;"> 모바일 예약 불가</span>
+		                            </c:if>
+		                        </p>  --%>
+		                        
+		                        <div class="ticket">
+								  <div class="ticket-left"></div>
+								  <div class="ticket-right">
+								    <div class="route">
+								      <span class="to" style="opacity: 0.5;">${sale.ProductName}</span>
+								    </div>
+								    <div class="time">
+								      <span style="opacity: 0.5;">만료일: ${sale.ValidDate}</span>
+								    </div>
+								    <c:if test="${sale.MobileBookingAvailable == 0}">
+		                                <span style="color: red; opacity: 0.5; font-size: 14px;"> 모바일 예약 불가</span>
+		                            </c:if>
+								  </div>
+								</div>
+		                        
+		                    </c:if>
+		                    <c:if test="${sale.DisabledYn != 'Y'}">
+		                        <%-- <p class="membership__row__col" style="font-size:14px;">${sale.ProductName}</p> 
+		                        <p class="membership__row__col" style="font-size:12px;">만료일: ${sale.ValidDate}
+		                            <c:if test="${sale.ServiceCount > 0}">
+		                                <span style="color: red; font-size:12px;"> ${sale.ServiceRemainCountTotal}회 남음</span>
+		                            </c:if>
+		                            <c:if test="${sale.MobileBookingAvailable == 0}">
+		                                <span style="color: red; font-size: 12px;"> 모바일 예약 불가</span>
+		                            </c:if>
+		                        </p>  --%>
+		                        
+		                        <div class="ticket <c:if test='${sale.DisabledYn != "Y"}'>disabled</c:if>">
+								  <div class="ticket-left"></div>
+								  <div class="ticket-right">
+								    <div class="route">${sale.ProductName}</div>
+								    <div class="time">
+								      <span>만료일: ${sale.ValidDate}</span>
+								      <c:if test="${sale.ServiceCount > 0}">
+								        <span style="color: red; font-size:14px;">&nbsp;${sale.ServiceRemainCountTotal}회 남음</span>
+								      </c:if>
+								    </div>
+								    <c:if test="${sale.MobileBookingAvailable == 0}">
+								    	<div class="details">
+										     <span style="color: red; font-size:14px;">모바일 예약 불가</span>
+								        </div>
+							        </c:if>
+								    
+								  </div>
+								</div>
+		                    </c:if>
+		                </div>
+		            </c:forEach>
+		        </c:when>
+		        <c:otherwise>
+		            <p class="membership__row__col" style="font-size:14px;">이용 가능한 상품이 없습니다.</p>
+		        </c:otherwise>
+		    </c:choose>
+		</div>
+		
+		
+		
+		
+      </div>
+      
+      <div class="footer" style="background-color: #f8f8f8; padding: 20px 10px; text-align: center; border-top: 1px solid #ddd;">
+		  <p style="margin-bottom: 10px;">
+			<span class="footer-link" onclick="openModal('privacyModal')"><strong>개인정보 처리방침</strong></span>
+			<span class="footer-link" onclick="openModal('termsModal')"><strong>회원이용약관</strong></span><!-- 
+			<span class="footer-link" onclick="openModal('faqModal')">FAQ</span>
+			<span class="footer-link" onclick="openModal('csModal')">고객센터</span> -->
+		  </p>
+		  <p class="footer-text">EaglePass</p>
+		  <p class="footer-text">고객센터 운영시간 : 월~금 10~18시</p>
+		  <p class="footer-text">고객센터: 1551-2340</p>
+		  <p class="footer-text" style="margin-bottom: 10px;">&copy; 2025. EaglePass. All rights reserved.</p>
+		  
+		  <div class="footer-text" style="font-size: 13px;">
+		    Designed by 
+		    <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">
+		      Freepik
+		    </a>. Some icons are created using Microsoft PowerPoint.
+		  </div>
+	  </div>
+		
+		<!-- ✅ 모달들 -->
+		<div id="privacyModal" class="custom-modal" style="display: none;">
+		  <div class="custom-modal-content">
+		    <div class="custom-modal-header">
+		      <h5>개인정보 처리방침</h5>
+		      <button onclick="closeModal('privacyModal')" style="font-size:32px;">&times;</button>
+		    </div>
+		    <div class="custom-modal-body">
+		      <%@ include file="privacyPolicyContent.jsp" %>
+		    </div>
+		  </div>
+		</div>
+		
+		<div id="termsModal" class="custom-modal" style="display: none;">
+		  <div class="custom-modal-content">
+		    <div class="custom-modal-header">
+		      <h5>회원이용약관</h5>
+		      <button onclick="closeModal('termsModal')" style="font-size:32px;">&times;</button>
+		    </div>
+		    <div class="custom-modal-body">
+		      <%@ include file="TermsOfService.jsp" %>
+		    </div>
+		  </div>
+		</div>
+
+		
+		<!-- <div class="modal fade" id="faqModal" tabindex="-1">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">FAQ</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		      </div>
+		      <div class="modal-body">
+		        <p>여기에 자주 묻는 질문 내용을 작성하세요.</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		<div class="modal fade" id="csModal" tabindex="-1">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">고객센터</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		      </div>
+		      <div class="modal-body">
+		        <p>여기에 고객센터 안내 내용을 작성하세요.</p>
+		      </div>
+		    </div>
+		  </div>
+		</div> -->
+
+      
+    </div>
+    <!-- 안내 모달 -->
+	<div id="infoModal" class="custom-modal" style="display: none;">
+	  <div class="custom-modal-content">
+	    <div class="custom-modal-header">
+	      <h5 class="custom-modal-title">안내</h5>
+	      <button class="custom-close-btn" onclick="closeModal('infoModal')"></button>
+	    </div>
+	    <div class="custom-modal-body" id="infoModalMessage" style="text-align: center; font-size:16px;">
+    
+   		</div>
+   		<div class="custom-modal-footer" style="text-align: center; margin-top: 25px;">
+		  <button id="infoModalOk" class="signup__cont__btn-box_2">확인</button>
+		</div>
+	  </div>
+	</div>
+    <script>
+    	function serviceAlert(message, options) {
+     	  document.getElementById('infoModalMessage').innerText = message;
+     	  openModal('infoModal');
+
+     	  var okBtn = document.getElementById('infoModalOk');
+     	  okBtn.onclick = function () {
+     	    closeModal('infoModal');
+
+     	    if (options && options.reload === true) {
+     	      location.reload();
+     	    }
+
+     	    if (options && typeof options.callback === 'function') {
+     	      options.callback();
+     	    }
+     	  };
+     	}
+    	
+    	function openModal(id) {
+   		  document.getElementById(id).style.display = 'flex';
+   		  document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
+   		}
+
+   		function closeModal(id) {
+   		  document.getElementById(id).style.display = 'none';
+   		  document.body.style.overflow = ''; // 스크롤 복원
+   		}
+    </script>
+    
+    
+  </body>
+
+</html>
