@@ -45,63 +45,14 @@
             margin: 0;
             line-height: 1;
         }
-        ul,
-        li {
-            list-style: none;
-        }
-        a {
-            text-decoration: none !important;
-            color: #000;
-        }
-        optgroup,
-        select,
-        button {
-            cursor: pointer;
-        }
-        input::-webkit-input-placeholder {
-            color: #96929d;
-            font-weight: 400;
-        }
-        textarea::-webkit-input-placeholder {
-            color: #96929d;
-            font-weight: 400;
-        }
-        input::-ms-input-placeholder {
-            color: #96929d;
-            font-weight: 400;
-        }
-        textarea::-ms-input-placeholder {
-            color: #96929d;
-            font-weight: 400;
-        }
-        input::-moz-placeholder {
-            color: #96929d;
-            font-weight: 400;
-        }
-        textarea::-moz-placeholder {
-            color: #96929d;
-            font-weight: 400;
-        }
-        input:-webkit-autofill {
-            -webkit-box-shadow: 0 0 0 1000px #fff inset;
-        }
-        input[type='number']::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-        }
-        input[type='number']::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-        }
-        select::-ms-expand {
-            display: none;
-        }
-        select {
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            appearance: none;
-        }
+
         img {
             vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            height: auto;
         }
+        
         body {
             width: 100%;
             position: relative;
@@ -120,8 +71,6 @@
             -webkit-tap-highlight-color: transparent;
             -webkit-font-smoothing: antialiased;
             outline: none;
-        }
-        * {
             font-family: Pretendard, -apple-system, BlinkMacSystemFont,
                 system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
                 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
@@ -134,62 +83,20 @@
             box-sizing: border-box;
             word-break: keep-all;
         }
-        i,
-        em {
-            line-height: inherit;
-            font-style: normal;
-        }
-        .blind {
-            font-size: 0 !important;
-            color: transparent !important;
-        }
-        span,
-        i,
-        strong,
-        q {
+
+        span {
             font-size: inherit;
             line-height: inherit;
             color: inherit;
             letter-spacing: inherit;
             font-family: inherit;
         }
-        q::before,
-        q::after {
-            content: none;
-        }
-        b {
-            font-size: inherit;
-            font-weight: 500;
-            line-height: inherit;
-            color: inherit;
-            letter-spacing: inherit;
-            font-family: inherit;
-        }
+
         table {
             width: 100%;
             table-layout: fixed;
             border-collapse: collapse;
             border-spacing: 0;
-        }
-        button {
-            border: none;
-            background-color: transparent;
-        }
-
-        input::-webkit-date-and-time-value {
-            text-align: left;
-        }
-
-        /* 공통 */
-        img {
-            display: inline-block;
-
-            width: 100%;
-            height: auto;
-        }
-        input {
-            border: 0;
-            outline: none;
         }
 
         /* invoice */
