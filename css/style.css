@@ -63,6 +63,26 @@ input {
 .signup__cont__required {
     color: red;
 }
+
+.signup__cont .certificate_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+.signup__cont .certificate_box > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(100% - 110px);
+}
+.signup__cont .certificate_box > button {
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    height: 100%;
+    background-color: var(--main-color);
+}
 .signup__cont__box {
     display: flex;
     justify-content: space-between;
@@ -102,6 +122,10 @@ input {
 .signup__cont__box > div {
     width: calc(100% - 78px);
 }
+.signup__cont__box input:disabled {
+    background: white;
+    cursor: not-allowed;
+}
 .signup__cont__box > div:not(.gender, .driving-range) input {
     box-sizing: border-box;
     border-radius: 10px;
@@ -131,41 +155,23 @@ input {
     top: 50%;
     transform: translateY(-50%);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     box-sizing: border-box;
     padding: 5px;
 
     border-radius: 5px;
 
-    width: 60px;
+    width: 25px;
+    height: 25px;
 
     font-size: 10px;
     color: var(--white);
     text-align: center;
 
     background-color: var(--main-color);
-}
-.signup__cont__box > div.tel {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-.signup__cont__box > div.tel select {
-    box-sizing: border-box;
-    padding: 0 20px;
-    border: none;
-
-    width: 90px;
-    height: 50px;
-
-    box-shadow: none;
-}
-.signup__cont__box > div.tel select:focus {
-    outline: 0;
-    box-shadow: none;
-}
-.signup__cont__box > div.tel input {
-    width: calc(100% - 100px);
 }
 .signup__cont__box > div.gender {
     margin-top: 14px;
@@ -220,6 +226,43 @@ input {
     color: var(--white);
 
     background-color: var(--main-color);
+}
+.find_golf .pop-up__cont {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.find_golf .pop-up__cont label,
+.find_golf .pop-up__cont input,
+.find_golf .pop-up__cont ul {
+    width: 100%;
+}
+
+.find_golf .pop-up__cont input,
+.find_golf .pop-up__cont ul {
+    border: 1px solid var(--gray-3);
+}
+
+.find_golf .pop-up__cont input {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.find_golf .pop-up__cont ul {
+    height: 200px;
+    overflow-y: auto;
+}
+.find_golf .pop-up__cont ul li button {
+    width: 100%;
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--gray-3);/
+}
+.find_golf .pop-up__cont ul li button.click {
+    background-color: var(--main-color);
+    color: white;
 }
 
 /* main */
@@ -1204,7 +1247,6 @@ z .quick-menu-box__menu a span {
 .check-point {
     padding: 20px 30px 0;
 }
-
 
 .footer-link {
     display: inline-block;

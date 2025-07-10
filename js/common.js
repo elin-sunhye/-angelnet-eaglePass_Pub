@@ -181,6 +181,21 @@ $(document).on('click', '.btn-modal-pop-up-close', function () {
     $('.position').fadeOut(300); // 3초동안 fadeOut
 });
 
+// 골프장 찾기 모달 열기
+$(document).on('click', '.btn_find_golf', function () {
+    $('.find_golf').fadeIn(300); // 3초동안 fadeIn
+});
+// 골프장 찾기 모달 닫기
+$(document).on('click', '.btn-modal-close', function () {
+    $('.find_golf').fadeOut(300); // 3초동안 fadeOut
+});
+
+// 골프장 찾기 모달 선택
+$(document).on('click', '.find_golf .pop-up__cont ul li button ', function () {
+    $('.find_golf .pop-up__cont ul li button ').removeClass('click');
+    $(this).addClass('click');
+});
+
 // 상품 구매
 $(document).on('click', '.product', function () {
     if ($(this).hasClass('on')) {

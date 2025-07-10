@@ -44,6 +44,34 @@
                 </section>
 
                 <section class="signup__cont">
+                    <div class="certificate_box">
+                        <div>
+                            <div class="signup__cont__box">
+                                <label for="name">성명</label>
+                                <div class="tel">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        placeholder="성명"
+                                        disabled
+                                    />
+                                </div>
+                            </div>
+                            <div class="signup__cont__box">
+                                <label for="pn">전화번호</label>
+                                <div class="tel">
+                                    <input
+                                        type="text"
+                                        id="pn"
+                                        placeholder="전화번호"
+                                        disabled
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button">본인인증</button>
+                    </div>
+
                     <div class="signup__cont__box">
                         <label for="golf">연습장</label>
                         <div>
@@ -52,114 +80,85 @@
                                     type="text"
                                     id="golf"
                                     placeholder="골프연습장"
+                                    disabled
                                 />
-                                <button type="button">찾기</button>
+                                <button type="button" class="btn_find_golf">
+                                    <svg
+                                        width="17"
+                                        height="17"
+                                        viewBox="0 0 17 17"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M16.0051 14.1155L12.2148 10.8922C11.8228 10.5392 11.4038 10.3782 11.0657 10.3932C11.9608 9.34514 12.5008 7.98604 12.5008 6.49994C12.5008 3.1857 9.81466 0.499512 6.50042 0.499512C3.18619 0.499512 0.5 3.1857 0.5 6.49994C0.5 9.81417 3.18619 12.5004 6.50042 12.5004C7.98653 12.5004 9.34562 11.9603 10.3937 11.0653C10.3777 11.4033 10.5397 11.8223 10.8927 12.2143L14.116 16.0046C14.668 16.6176 15.5691 16.6697 16.1191 16.1196C16.6691 15.5696 16.6171 14.6675 16.0041 14.1165L16.0051 14.1155ZM6.50042 10.4992C4.29127 10.4992 2.50014 8.70809 2.50014 6.49894C2.50014 4.28978 4.29127 2.49865 6.50042 2.49865C8.70958 2.49865 10.5007 4.28978 10.5007 6.49894C10.5007 8.70809 8.70958 10.4992 6.50042 10.4992Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="signup__cont__box">
-                        <label for="name">성명</label>
-                        <div>
-                            <input type="text" id="name" placeholder="성명" />
-                        </div>
-                    </div>
-                    <div class="signup__cont__box">
-                        <label for="pn">전화번호</label>
-                        <div class="tel">
-                            <select
-                                class="form-select"
-                                aria-label="Default select example"
-                            >
-                                <option value="skt" selected>SKT</option>
-                                <option value="kt">KT</option>
-                                <option value="lg">LG</option>
-                            </select>
-                            <input type="text" id="pn" placeholder="전화번호" />
-                        </div>
-                    </div>
-                    <div class="signup__cont__box">
-                        <label for="address">주소</label>
-                        <div>
-                            <div class="address">
+                </section>
+
+                <!-- 골프장 찾기 popup -->
+                <div class="pop-up find_golf">
+                    <div class="pop-up__inner">
+                        <h6 class="pop-up__title">
+                            골프장 검색
+                            <button type="button" class="btn-modal-close">
+                                <img
+                                    src="./img/assets/ico_close.svg"
+                                    alt="닫기 아이콘"
+                                />
+                            </button>
+                        </h6>
+
+                        <div class="pop-up__cont">
+                            <label>
                                 <input
                                     type="text"
-                                    id="detailAddress"
-                                    placeholder="주소"
+                                    name="findGolf"
+                                    id="findGolf"
+                                    placeholder="골프장 검색"
                                 />
-                                <button type="button">검색</button>
-                            </div>
-                            <input
-                                type="text"
-                                id="detailAddress"
-                                placeholder="상세 주소"
-                            />
+                            </label>
+
+                            <ul>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                                <li>
+                                    <button type="button">엔젤</button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="signup__cont__box gender">
-                        <label for="gender">성별</label>
-
-                        <div class="gender">
-                            <input
-                                type="radio"
-                                name="gender"
-                                id="male"
-                                value="male"
-                            />
-                            <label for="male">남자</label>
-                            <input
-                                type="radio"
-                                name="gender"
-                                id="female"
-                                value="female"
-                            />
-                            <label for="female">여자</label>
-                            <p>
-                                이용자는 선택적 개인정보 수립 및 이용을 거부할
-                                권리가 있으며, 거부하실 경우, 온라인을 통한
-                                회원가입을 신청할 수 없습니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <a
-                        href="./main.html"
-                        class="signup__cont__btn-box"
-                        type="button"
-                        >회원가입</a
-                    >
-
-                    <div class="signup__cont__box driving-range">
-                        <label for="drivingRange">연습장을 선택하세요.</label>
-
-                        <div class="driving-range">
-                            <div>
-                                <input
-                                    type="radio"
-                                    name="drivingRange"
-                                    id="first"
-                                    value="nano"
-                                />
-                                <label for="first">나노 골프 아카데미</label>
-                            </div>
-                            <div>
-                                <input
-                                    type="radio"
-                                    name="drivingRange"
-                                    id="sec"
-                                    value="tecno"
-                                />
-                                <label for="sec">테크노 골프 연습장</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a
-                        href="./main.html"
-                        class="signup__cont__btn-box"
-                        type="button"
-                        >선택</a
-                    >
-                </section>
+                </div>
             </div>
         </div>
 
