@@ -69,6 +69,8 @@ input {
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
+
+    width: 100%;
 }
 .signup__cont .certificate_box > div {
     display: flex;
@@ -258,7 +260,7 @@ input {
     width: 100%;
     text-align: left;
     padding: 5px 10px;
-    border-bottom: 1px solid var(--gray-3);/
+    border-bottom: 1px solid var(--gray-3);
 }
 .find_golf .pop-up__cont ul li button.click {
     background-color: var(--main-color);
