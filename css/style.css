@@ -76,10 +76,10 @@ input {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: calc(100% - 110px);
+    width: calc(100% - 90px);
 }
 .signup__cont .certificate_box > button {
-    width: 100px;
+    width: 80px;
     color: white;
     border-radius: 10px;
     height: 100%;
@@ -137,21 +137,14 @@ input {
     width: 100%;
     height: 50px;
 }
-.signup__cont__box > div .golf,
-.signup__cont__box > div .address {
+.signup__cont__box > div .inpBtn {
     position: relative;
 }
-.signup__cont__box > div .golf input {
+.signup__cont__box > div .inpBtn input {
     padding: 0 60px 0 20px;
 }
-.signup__cont__box > div .address {
-    margin-bottom: 10px;
-}
-.signup__cont__box > div .address input {
-    padding: 0 90px 0 20px;
-}
-.signup__cont__box > div .golf button,
-.signup__cont__box > div .address button {
+
+.signup__cont__box > div .inpBtn button {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -175,39 +168,12 @@ input {
 
     background-color: var(--main-color);
 }
-.signup__cont__box > div.gender {
-    margin-top: 14px;
-}
-.signup__cont__box > div.driving-range {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-}
-.signup__cont__box > div.driving-range label,
-.signup__cont__box > div.gender label {
+.signup__cont__box:first-of-type > div .inpBtn button {
+    width: 56px;
     font-size: 13px;
-    vertical-align: middle;
+    font-weight: 700;
 }
-.signup__cont__box > div.driving-range {
-    width: 100%;
-}
-.signup__cont__box > div.driving-range input,
-.signup__cont__box > div.gender input {
-    box-sizing: border-box;
-    border: 1px solid var(--main-color);
 
-    width: 16px;
-    height: 16px;
-
-    vertical-align: middle;
-
-    -webkit-appearance: auto;
-}
-.signup__cont__box > div.driving-range label:first-of-type,
-.signup__cont__box > div.gender label:first-of-type {
-    margin-right: 40px;
-}
 .signup__cont__box > div > p {
     margin: 10px 0 20px;
 
