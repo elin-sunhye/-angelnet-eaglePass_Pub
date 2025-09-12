@@ -14,7 +14,7 @@
     <style>
         :root {
             --base-height: 100vh;
-            --base-page-padding: 20px;
+            --base-page-padding: 2rem;
             --header-height: 0px;
             --menubar-height: 0px;
             --pagetab-height: 0px;
@@ -48,7 +48,30 @@
             margin: 0;
             line-height: 1;
         }
+        html,
+        body {
+            -webkit-text-size-adjust: 100%; /* iOS Safari */
+            -moz-text-size-adjust: 100%; /* Firefox */
+            -ms-text-size-adjust: 100%; /* IE/Edge 구버전 */
+            text-size-adjust: 100%; /* 표준 */
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            font-size: 1.6rem;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            overscroll-behavior-y: none;
+        }
 
+        button,
+        input,
+        textarea,
+        select {
+            line-height: normal;
+        }
         button {
             cursor: pointer;
         }
@@ -80,13 +103,6 @@
             -webkit-appearance: none;
         }
 
-        body {
-            width: 100%;
-            position: relative;
-            box-sizing: border-box;
-            overscroll-behavior-y: none;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -103,7 +119,7 @@
                 sans-serif;
             line-height: 1em;
             color: var(--black);
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: 500;
             box-sizing: border-box;
             word-break: keep-all;
@@ -137,7 +153,7 @@
         .biz-num-box,
         .biz-num input,
         .biz-num-box button {
-            border-radius: 10px;
+            border-radius: 1rem;
         }
 
         .biz-num-box {
@@ -145,15 +161,15 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 2rem;
 
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
 
-            padding: 30px 50px;
-            border: 5px solid var(--gray-4);
+            padding: 3rem 5rem;
+            border: 0.5rem solid var(--gray-4);
             box-sizing: border-box;
 
             width: 500px;
@@ -175,17 +191,17 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 1rem;
         }
 
         .biz-num input {
-            padding: 10px;
-            border: 1px solid var(--gray-2);
+            padding: 1rem;
+            border: 0.1rem solid var(--gray-2);
             box-sizing: border-box;
         }
 
         .biz-num-box button {
-            padding: 10px 0;
+            padding: 1rem 0;
             box-sizing: border-box;
 
             width: 100%;

@@ -17,10 +17,10 @@ input {
     width: 100vw;
     height: 100%;
 
-    border: 2px solid var(--gray-3);
+    border: 0.2rem solid var(--gray-3);
 }
 .invoice-wrap table tr {
-    border-top: 1px solid var(--gray-3);
+    border-top: 0.1rem solid var(--gray-3);
 }
 .invoice-wrap > table:first-of-type,
 .invoice-wrap table tr:first-of-type {
@@ -28,20 +28,20 @@ input {
 }
 
 .invoice-wrap table {
-    font-size: 13px;
-    border-top: 3px solid var(--gray-3);
+    font-size: 1.3rem;
+    border-top: 0.3rem solid var(--gray-3);
 }
 
 .invoice-wrap table tr td {
-    padding: 20px 10px;
-    border-right: 1px solid var(--gray-3);
+    padding: 2rem 1rem;
+    border-right: 0.1rem solid var(--gray-3);
     box-sizing: border-box;
 }
 
 .invoice-wrap table tr td p {
     width: 100%;
-    height: 18px;
-    font-size: 18px;
+    height: 1.8rem;
+    font-size: 1.8rem;
     color: #888;
 }
 
@@ -52,8 +52,8 @@ input {
     background-color: var(--main-color);
 }
 .invoice-wrap .title-box tr:first-of-type td p {
-    height: 33px;
-    font-size: 33px;
+    height: 3.3rem;
+    font-size: 3.3rem;
     font-weight: bold;
     color: var(--white);
 

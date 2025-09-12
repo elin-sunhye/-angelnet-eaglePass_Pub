@@ -129,7 +129,7 @@
 	      <div class="notice_box">
               <p class="chip">공지사항</p>
               <div class="notice_list">
-			  	<p style="font-size:14px; white-space: normal; word-wrap: break-word;">${environment.Notice}</p>
+			  	<p style="font-size:1.4rem; white-space: normal; word-wrap: break-word;">${environment.Notice}</p>
               </div>
           </div>
 	
@@ -142,10 +142,10 @@
 		                <div class="membership__row" style="flex-direction: column; align-items: flex-start;">
 		                    <c:if test="${sale.DisabledYn == 'Y'}">
 		                       
-		                        <%-- <p class="membership__row__col" style="opacity: 0.5; font-size:14px;">${sale.ProductName}</p> 
-		                        <p class="membership__row__col" style="opacity: 0.5; font-size:12px;">만료일: ${sale.ValidDate}
+		                        <%-- <p class="membership__row__col" style="opacity: 0.5; font-size:1.4rem;">${sale.ProductName}</p> 
+		                        <p class="membership__row__col" style="opacity: 0.5; font-size:1.2rem;">만료일: ${sale.ValidDate}
 		                            <c:if test="${sale.MobileBookingAvailable == 0}">
-		                                <span style="color: red; font-size: 12px;"> 모바일 예약 불가</span>
+		                                <span style="color: red; font-size: 1.2rem;"> 모바일 예약 불가</span>
 		                            </c:if>
 		                        </p>  --%>
 		                        
@@ -159,20 +159,20 @@
 								      <span style="opacity: 0.5;">만료일: ${sale.ValidDate}</span>
 								    </div>
 								    <c:if test="${sale.MobileBookingAvailable == 0}">
-		                                <span style="color: red; opacity: 0.5; font-size: 14px;"> 모바일 예약 불가</span>
+		                                <span style="color: red; opacity: 0.5; font-size: 1.4rem;"> 모바일 예약 불가</span>
 		                            </c:if>
 								  </div>
 								</div>
 		                        
 		                    </c:if>
 		                    <c:if test="${sale.DisabledYn != 'Y'}">
-		                        <%-- <p class="membership__row__col" style="font-size:14px;">${sale.ProductName}</p> 
-		                        <p class="membership__row__col" style="font-size:12px;">만료일: ${sale.ValidDate}
+		                        <%-- <p class="membership__row__col" style="font-size:1.4rem;">${sale.ProductName}</p> 
+		                        <p class="membership__row__col" style="font-size:1.2rem;">만료일: ${sale.ValidDate}
 		                            <c:if test="${sale.ServiceCount > 0}">
-		                                <span style="color: red; font-size:12px;"> ${sale.ServiceRemainCountTotal}회 남음</span>
+		                                <span style="color: red; font-size:1.2rem;"> ${sale.ServiceRemainCountTotal}회 남음</span>
 		                            </c:if>
 		                            <c:if test="${sale.MobileBookingAvailable == 0}">
-		                                <span style="color: red; font-size: 12px;"> 모바일 예약 불가</span>
+		                                <span style="color: red; font-size: 1.2rem;"> 모바일 예약 불가</span>
 		                            </c:if>
 		                        </p>  --%>
 		                        
@@ -183,12 +183,12 @@
 								    <div class="time">
 								      <span>만료일: ${sale.ValidDate}</span>
 								      <c:if test="${sale.ServiceCount > 0}">
-								        <span style="color: red; font-size:14px;">&nbsp;${sale.ServiceRemainCountTotal}회 남음</span>
+								        <span style="color: red; font-size:1.4rem;">&nbsp;${sale.ServiceRemainCountTotal}회 남음</span>
 								      </c:if>
 								    </div>
 								    <c:if test="${sale.MobileBookingAvailable == 0}">
 								    	<div class="details">
-										     <span style="color: red; font-size:14px;">모바일 예약 불가</span>
+										     <span style="color: red; font-size:1.4rem;">모바일 예약 불가</span>
 								        </div>
 							        </c:if>
 								    
@@ -199,7 +199,7 @@
 		            </c:forEach>
 		        </c:when>
 		        <c:otherwise>
-		            <p class="membership__row__col" style="font-size:14px;">이용 가능한 상품이 없습니다.</p>
+		            <p class="membership__row__col" style="font-size:1.4rem;">이용 가능한 상품이 없습니다.</p>
 		        </c:otherwise>
 		    </c:choose>
 		</div>
@@ -209,8 +209,8 @@
 		
       </div>
       
-      <div class="footer" style="background-color: #f8f8f8; padding: 20px 10px; text-align: center; border-top: 1px solid #ddd;">
-		  <p style="margin-bottom: 10px;">
+      <div class="footer" style="background-color: #f8f8f8; padding: 2rem 1rem; text-align: center; border-top: 0.1rem solid #ddd;">
+		  <p style="margin-bottom: 1rem;">
 			<span class="footer-link" onclick="openModal('privacyModal')"><strong>개인정보 처리방침</strong></span>
 			<span class="footer-link" onclick="openModal('termsModal')"><strong>회원이용약관</strong></span><!-- 
 			<span class="footer-link" onclick="openModal('faqModal')">FAQ</span>
@@ -219,9 +219,9 @@
 		  <p class="footer-text">EaglePass</p>
 		  <p class="footer-text">고객센터 운영시간 : 월~금 10~18시</p>
 		  <p class="footer-text">고객센터: 1551-2340</p>
-		  <p class="footer-text" style="margin-bottom: 10px;">&copy; 2025. EaglePass. All rights reserved.</p>
+		  <p class="footer-text" style="margin-bottom: 1rem;">&copy; 2025. EaglePass. All rights reserved.</p>
 		  
-		  <div class="footer-text" style="font-size: 13px;">
+		  <div class="footer-text" style="font-size: 1.3rem;">
 		    Designed by 
 		    <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">
 		      Freepik
@@ -234,7 +234,7 @@
 		  <div class="custom-modal-content">
 		    <div class="custom-modal-header">
 		      <h5>개인정보 처리방침</h5>
-		      <button onclick="closeModal('privacyModal')" style="font-size:32px;">&times;</button>
+		      <button onclick="closeModal('privacyModal')" style="font-size:30.2rem;">&times;</button>
 		    </div>
 		    <div class="custom-modal-body">
 		      <%@ include file="privacyPolicyContent.jsp" %>
@@ -246,7 +246,7 @@
 		  <div class="custom-modal-content">
 		    <div class="custom-modal-header">
 		      <h5>회원이용약관</h5>
-		      <button onclick="closeModal('termsModal')" style="font-size:32px;">&times;</button>
+		      <button onclick="closeModal('termsModal')" style="font-size:30.2rem;">&times;</button>
 		    </div>
 		    <div class="custom-modal-body">
 		      <%@ include file="TermsOfService.jsp" %>
@@ -292,7 +292,7 @@
 	      <h5 class="custom-modal-title">안내</h5>
 	      <button class="custom-close-btn" onclick="closeModal('infoModal')"></button>
 	    </div>
-	    <div class="custom-modal-body" id="infoModalMessage" style="text-align: center; font-size:16px;">
+	    <div class="custom-modal-body" id="infoModalMessage" style="text-align: center; font-size:1.6rem;">
     
    		</div>
    		<div class="custom-modal-footer" style="text-align: center; margin-top: 25px;">

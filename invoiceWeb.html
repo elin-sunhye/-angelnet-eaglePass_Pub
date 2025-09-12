@@ -11,7 +11,7 @@
     <style>
         :root {
             --base-height: 100vh;
-            --base-page-padding: 20px;
+            --base-page-padding: 2rem;
             --header-height: 0px;
             --menubar-height: 0px;
             --pagetab-height: 0px;
@@ -45,19 +45,37 @@
             margin: 0;
             line-height: 1;
         }
+        html,
+        body {
+            -webkit-text-size-adjust: 100%; /* iOS Safari */
+            -moz-text-size-adjust: 100%; /* Firefox */
+            -ms-text-size-adjust: 100%; /* IE/Edge 구버전 */
+            text-size-adjust: 100%; /* 표준 */
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            font-size: 1.6rem;
+
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            overscroll-behavior-y: none;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            line-height: normal;
+        }
 
         img {
             vertical-align: top;
             display: inline-block;
             width: 100%;
             height: auto;
-        }
-
-        body {
-            width: 100%;
-            position: relative;
-            box-sizing: border-box;
-            overscroll-behavior-y: none;
         }
         caption {
             display: none;
@@ -78,7 +96,7 @@
                 sans-serif;
             line-height: 1em;
             color: var(--black);
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: 500;
             box-sizing: border-box;
             word-break: keep-all;
@@ -106,10 +124,10 @@
             width: 100vw;
             height: 100%;
 
-            border: 2px solid var(--gray-3);
+            border: 0.2rem solid var(--gray-3);
         }
         .invoice-wrap table tr {
-            border-top: 1px solid var(--gray-3);
+            border-top: 0.1rem solid var(--gray-3);
         }
         .invoice-wrap > table:first-of-type,
         .invoice-wrap table tr:first-of-type {
@@ -117,13 +135,13 @@
         }
 
         .invoice-wrap table {
-            font-size: 13px;
+            font-size: 1.3rem;
             border-top: 3px solid var(--gray-3);
         }
 
         .invoice-wrap table tr td {
-            padding: 20px 10px;
-            border-right: 1px solid var(--gray-3);
+            padding: 2rem 1rem;
+            border-right: 0.1rem solid var(--gray-3);
             box-sizing: border-box;
         }
 
