@@ -1,0 +1,11 @@
+@media screen and (max-width: 400px) {
+    .search-box.search-date > label {
+        width: 100%;
+    }
+    .select-product {
+        flex-wrap: wrap;
+    }
+    .select-product select {
+        width: 100%;
+    }
+}
