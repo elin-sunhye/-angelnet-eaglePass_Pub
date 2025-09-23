@@ -105,6 +105,7 @@ pageEncoding="UTF-8"%> <%@ include file="/include/jsp/globals.jsp"%>
             <!-- <a href="./booking.html" class="quick_menu">타석<br />예약</a> -->
 
             <div class="container">
+				<!-- ** use-search 클레스 추가 ** -->
                 <div class="search-box search-date use-search">
                     <div class="select-product">
                         <label>이용중인 상품</label>
@@ -132,6 +133,7 @@ pageEncoding="UTF-8"%> <%@ include file="/include/jsp/globals.jsp"%>
                         </select>
                     </div>
 
+					<!-- 추가 -->
                     <div class="select-date">
                         <label>기간</label>
                         <div>
