@@ -106,16 +106,9 @@
             <!-- <a href="./booking.html" class="quick_menu">타석<br />예약</a> -->
 
             <div class="container">
-                <div class="search-box search-date">
-                    <label>
-                        <input type="date" name="startDt" />
-                    </label>
-                    <label>
-                        <input type="date" name="endDt" />
-                    </label>
-
+                <div class="search-box search-date use-search">
                     <div class="select-product">
-                        <label>이용중인 상품</label>
+                        <label>상품</label>
                         <select
                             class="form-select"
                             aria-label="Default select example"
@@ -126,6 +119,17 @@
                             <option value="coupon70">쿠폰 70분 이용권</option>
                             <option value="daily6">6개월 회원권</option>
                         </select>
+                    </div>
+                    <div class="select-date">
+                        <label>기간</label>
+                        <div>
+                            <label>
+                                <input type="date" name="startDt" />
+                            </label>
+                            <label>
+                                <input type="date" name="endDt" />
+                            </label>
+                        </div>
                     </div>
                 </div>
 

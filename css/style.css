@@ -1090,6 +1090,32 @@ input {
 }
 
 /* use */
+.use-search .select-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.use-search .select-product > label,
+.use-search .select-date > label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 5rem !important;
+}
+.use-search > .select-product > select,
+.use-search > .select-date > div {
+    width: calc(100% - 5.5rem);
+}
+.use-search > .select-date > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.use-search > .select-date > div label {
+    width: calc((100% - 1rem) / 2);
+}
 .list > div > p:first-child > span {
     margin-left: 1rem;
     font-size: 1.3rem;
