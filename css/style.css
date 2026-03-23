@@ -1,767 +1,786 @@
 /* 공통 */
 img {
-    display: inline-block;
+  display: inline-block;
 
-    width: 100%;
-    min-height: auto;
+  width: 100%;
+  min-height: auto;
 }
 input {
-    border: 0;
-    outline: none;
+  border: 0;
+  outline: none;
 }
 
 /* signup */
 .sign {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    gap: 3.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3.4rem;
 
-    padding: 3.5rem;
+  padding: 3.5rem;
 }
 .sign__title {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    min-height: 16rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  min-height: 16rem;
 }
 .sign__title__logo-img {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
-    width: 18rem;
+  width: 18rem;
 }
 .sign__title__sub-title {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 .sign__title__sub-title {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .signup__title__btn-back {
-    color: var(--main-color);
-    font-size: 1.3rem;
+  color: var(--main-color);
+  font-size: 1.3rem;
 }
 .signup__title__btn-back span {
-    display: inline-block;
-    width: 1.4rem;
-    margin-right: 0.5rem;
+  display: inline-block;
+  width: 1.4rem;
+  margin-right: 0.5rem;
 }
 .sign__title .signup__cont__box {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 .signup__cont {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
-    width: 100%;
+  width: 100%;
 }
 
 .signup__cont__required {
-    color: red;
+  color: red;
 }
 
 .signup__cont .certificate_box {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
 
-    width: 100%;
+  width: 100%;
 }
 .signup__cont .certificate_box > div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: calc(100% - 9rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: calc(100% - 9rem);
 }
 .signup__cont .certificate_box > button {
-    width: 8rem;
-    color: white;
-    border-radius: 1rem;
-    min-height: 100%;
-    background-color: var(--main-color);
+  width: 8rem;
+  color: white;
+  border-radius: 1rem;
+  min-height: 100%;
+  background-color: var(--main-color);
 }
 .signup__cont__box {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
 
-    width: 100%;
+  width: 100%;
 }
 .signup__cont__box > div .signup__cont__box > label {
-    display: inline-block;
+  display: inline-block;
 }
 .signup__cont__box > label {
-    width: 7.8rem;
-    min-height: 5rem;
+  width: 7.8rem;
+  min-height: 5rem;
 
-    font-size: 1.3rem;
-    line-min-height: 5rem;
+  font-size: 1.3rem;
+  line-min-height: 5rem;
 }
 .signup__cont__box.driving-range {
-    flex-wrap: wrap;
-    margin: 3rem 0 2rem;
+  flex-wrap: wrap;
+  margin: 3rem 0 2rem;
 }
 .signup__cont__box.driving-range > label {
-    width: 100%;
-    min-height: fit-content;
+  width: 100%;
+  min-height: fit-content;
 
-    line-min-height: unset;
-    color: var(--main-color);
+  line-min-height: unset;
+  color: var(--main-color);
 }
 .signup__cont__box:not(.driving-range) > label::before {
-    content: '*';
+  content: '*';
 
-    margin-right: 0.3rem;
+  margin-right: 0.3rem;
 
-    color: red;
+  color: red;
 }
 .signup__cont__box > div {
-    width: calc(100% - 7.8rem);
+  width: calc(100% - 7.8rem);
 }
 .signup__cont__box input:disabled {
-    background: white;
-    cursor: not-allowed;
+  background: white;
+  cursor: not-allowed;
 }
 .signup__cont__box > div:not(.gender, .driving-range) input {
-    box-sizing: border-box;
-    border-radius: 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
 
-    padding: 0 2rem;
+  padding: 0 2rem;
 
-    width: 100%;
-    min-height: 5rem;
+  width: 100%;
+  min-height: 5rem;
 }
 .signup__cont__box > div .inpBtn {
-    position: relative;
+  position: relative;
 }
 .signup__cont__box > div .inpBtn input {
-    padding: 0 6rem 0 2rem;
+  padding: 0 6rem 0 2rem;
 }
 
 .signup__cont__box > div .inpBtn button {
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    box-sizing: border-box;
-    padding: 0.5rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
 
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 
-    width: 2.5rem;
-    min-height: 2.5rem;
+  width: 2.5rem;
+  min-height: 2.5rem;
 
-    font-size: 1rem;
-    color: var(--white);
-    text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+  text-align: center;
 
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 .signup__cont__box:first-of-type > div .inpBtn button {
-    width: 5.6rem;
-    font-size: 1.3rem;
-    font-weight: 700;
+  width: 5.6rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .signup__cont__box > div > p {
-    margin: 1rem 0 2rem;
+  margin: 1rem 0 2rem;
 
-    font-size: 1.3rem;
-    line-min-height: 1.3;
+  font-size: 1.3rem;
+  line-min-height: 1.3;
 }
 .signup__cont__btn-box {
-    margin: 0 auto;
-    border-radius: 1rem;
+  margin: 0 auto;
+  border-radius: 1rem;
 
-    min-width: 50%;
-    width: 80%;
-    min-height: 5rem;
+  min-width: 50%;
+  width: 80%;
+  min-height: 5rem;
 
-    font-weight: 700;
-    text-align: center;
-    line-min-height: 5rem;
-    color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  line-min-height: 5rem;
+  color: var(--white);
 
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 .find_golf .pop-up__cont {
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
 }
 .find_golf .pop-up__cont label,
 .find_golf .pop-up__cont input,
 .find_golf .pop-up__cont ul {
-    width: 100%;
+  width: 100%;
 }
 
 .find_golf .pop-up__cont input,
 .find_golf .pop-up__cont ul {
-    border: 0.1rem solid var(--gray-3);
+  border: 0.1rem solid var(--gray-3);
 }
 
 .find_golf .pop-up__cont input {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .find_golf .pop-up__cont ul {
-    min-height: 20rem;
-    overflow-y: auto;
+  min-height: 20rem;
+  overflow-y: auto;
 }
 .find_golf .pop-up__cont ul li button {
-    width: 100%;
-    text-align: left;
-    padding: 0.5rem 1rem;
-    border-bottom: 0.1rem solid var(--gray-3);
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.1rem solid var(--gray-3);
 }
 .find_golf .pop-up__cont ul li button.click {
-    background-color: var(--main-color);
-    color: white;
+  background-color: var(--main-color);
+  color: white;
 }
 
 /* main */
 .main {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 .membership-card,
 .membership,
 .quick-menu-box {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 .golf-club {
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0;
 
-    width: 100%;
-    height: 28rem;
-    overflow: hidden;
+  width: 100%;
+  height: 28rem;
+  overflow: hidden;
 
-    /* background-color: var(--main-color); */
-    background: url('../img/assets/img-main4.png') no-repeat center center /
-        cover;
+  /* background-color: var(--main-color); */
+  background: url('/img/assets/img-main4.png') no-repeat center center / cover;
 }
 .golf-club__img {
-    position: absolute;
-    right: 4rem;
-    bottom: -1rem;
+  position: absolute;
+  right: 4rem;
+  bottom: -1rem;
 
-    width: auto;
-    min-height: 23rem;
-    aspect-ratio: 0.4 / 1;
+  width: auto;
+  min-height: 23rem;
+  aspect-ratio: 0.4 / 1;
 }
 .golf-club__img img {
-    width: auto;
-    min-height: 100%;
+  width: auto;
+  min-height: 100%;
 }
 .golf-club__info {
-    width: 100%;
-    margin-bottom: 4rem;
-    /* 좌우 정렬 */
-    text-align: right;
+  width: 100%;
+  margin-bottom: 4rem;
+  /* 좌우 정렬 */
+  text-align: right;
 }
 .golf-club__info p {
-    color: var(--white);
+  color: var(--white);
 }
 .golf-club__info p:first-of-type {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 
-    font-size: 1.8rem;
-    font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 .golf-club__info p:last-of-type {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .container.bottom {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 
-    padding-top: 3rem;
-    margin-top: -1.7rem;
-    border-radius: 2rem 2rem 0 0;
+  padding-top: 3rem;
+  margin-top: -1.7rem;
+  border-radius: 2rem 2rem 0 0;
 
-    background: var(--gray-4);
+  background: var(--gray-4);
 }
 
 .notice_box {
-    margin-bottom: 3rem;
-    width: 100%;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 .notice_box .chip {
-    /* background-color: var(--sub-color-blue); */
-    color: #4475a2;
+  /* background-color: var(--sub-color-blue); */
+  color: #4475a2;
 }
 
 .notice_box .notice_list p:not(:last-of-type) {
-    margin-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .membership-card {
-    text-align: center;
+  text-align: center;
 }
 .membership-card__title {
-    font-size: 1.8rem;
-    font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 .membership-card__name {
-    margin: 1rem 0 1.5rem;
+  margin: 1rem 0 1.5rem;
 
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 .membership-card__num {
-    font-size: 1.6rem;
-    font-family: 700;
+  font-size: 1.6rem;
+  font-family: 700;
 }
 .chip {
-    display: inline-block;
+  display: inline-block;
 
-    box-sizing: border-box;
-    border-radius: 5rem;
-    margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-radius: 5rem;
+  margin-bottom: 1rem;
 
-    font-size: 1.6rem;
-    line-min-height: 22rem;
-    text-align: center;
-    font-weight: bolder;
-    color: #a24445;
+  font-size: 1.6rem;
+  line-min-height: 22rem;
+  text-align: center;
+  font-weight: bolder;
+  color: #a24445;
 }
 .membership__row {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .membership__row:not(:last-of-type) {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .membership__row__col {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .membership__row__col:first-of-type {
-    display: inline-block;
+  display: inline-block;
 
-    position: relative;
+  position: relative;
 
-    width: 9rem;
+  width: 9rem;
 
-    font-weight: 700;
+  font-weight: 700;
 }
 .membership__row__col:first-of-type::after {
-    content: '';
-    display: inline-block;
+  content: '';
+  display: inline-block;
 
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 
-    width: 0.1rem;
-    min-height: 1.3rem;
+  width: 0.1rem;
+  min-height: 1.3rem;
 
-    background-color: var(--black);
+  background-color: var(--black);
 }
 .membership__row__col span {
-    margin-left: 1rem;
+  margin-left: 1rem;
 
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #bc332d;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #bc332d;
 }
 .quick-menu-box__transfer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .quick-menu-box__transfer span {
-    display: inline-block;
+  display: inline-block;
 
-    width: 1.3rem;
-    min-height: 1rem;
+  width: 1.3rem;
+  min-height: 1rem;
 }
 .quick-menu-box__transfer p {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--gray-2);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gray-2);
 }
 .quick-menu-box__transfer button {
-    box-sizing: border-box;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
 
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
 
-    background-color: var(--sub-color-blue);
+  background-color: var(--sub-color-blue);
 }
 .quick-menu-box__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .quick-menu-box__menu a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 
-    border-radius: 1rem;
+  border-radius: 1rem;
 
-    width: calc((100% - 1rem) / 2);
-    min-height: 7rem;
+  width: calc((100% - 1rem) / 2);
+  min-height: 7rem;
 
-    font-size: 1.8rem;
-    font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 700;
 
-    background-color: var(--white);
+  background-color: var(--white);
 }
+/* 고도화 */
 .quick-menu-box__menu a:not(:first-of-type) {
-    min-height: 5rem;
+  min-height: 5rem;
+  border-bottom: 5px solid;
 }
+.quick-menu-box__menu a:nth-of-type(2),
+.quick-menu-box__menu a:nth-of-type(3) {
+  border-color: #007a0c;
+}
+.quick-menu-box__menu a:nth-of-type(4),
+.quick-menu-box__menu a:nth-of-type(5) {
+  border-color: #003b7a;
+}
+.quick-menu-box__menu a:nth-of-type(6),
+.quick-menu-box__menu a:nth-of-type(7) {
+  border-color: #00b8ac;
+}
+/* 고도화 끝 */
 .quick-menu-box__menu a span {
-    display: inline-block;
+  display: inline-block;
 
-    width: 2.6rem;
+  width: 2.6rem;
 }
+/* 고도화 */
 .quick-menu-box__menu a:first-of-type {
-    position: relative;
+  position: relative;
 
-    width: 100%;
+  width: 100%;
 
-    font-size: 2.2rem;
-    color: var(--white);
+  font-size: 2.2rem;
+  color: var(--white);
 
-    background-color: #bc332d;
-    overflow: hidden;
+  background: url('/img/assets/img_booking_bg.svg') no-repeat center center /
+    cover;
+  overflow: hidden;
 }
 .quick-menu-box__menu a:first-of-type span {
-    display: inline-block;
+  display: inline-block;
 
-    margin-left: -13rem;
+  margin-left: -13rem;
 
-    width: 6.5rem;
+  width: 4.3rem;
 }
+/* 고도화 끝 */
 .quick-menu-box__menu a:first-of-type span.ico_arrow_booking {
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 
-    width: 7rem;
-    min-height: 100%;
+  width: 7rem;
+  min-height: 100%;
 
-    background-color: var(--white);
+  background-color: var(--white);
 }
 .quick-menu-box__menu a:first-of-type span.ico_arrow_booking::after {
-    content: '';
-    width: 0;
-    min-height: 0;
-    border-bottom: 4rem solid var(--white);
-    border-top: 4rem solid transparent;
-    border-left: 4rem solid transparent;
-    border-right: 4rem solid var(--white);
+  content: '';
+  width: 0;
+  min-height: 0;
+  border-bottom: 4rem solid var(--white);
+  border-top: 4rem solid transparent;
+  border-left: 4rem solid transparent;
+  border-right: 4rem solid var(--white);
 
-    position: absolute;
-    right: 7rem;
+  position: absolute;
+  right: 7rem;
 }
+/* 고도화 */
 .quick-menu-box__menu a:first-of-type span.ico_arrow_booking img {
-    display: inline-block;
+  display: inline-block;
 
-    position: absolute;
-    right: 70%;
-    top: 50%;
-    transform: translate(50%, -50%);
-    z-index: 1;
+  position: absolute;
+  right: 70%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
 
-    width: 40%;
-    min-height: auto;
+  width: 30%;
+  min-height: auto;
 }
+/* 고도화 끝 */
 
 /* booking */
 .search-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .search-box .booking_date {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
 }
 .search-box .booking_date > div {
-    width: calc(100% / 7);
+  width: calc(100% / 7);
 }
 .search-box .booking_date p {
-    text-align: center;
+  text-align: center;
 }
 .search-box .booking_date p:nth-of-type(2) {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    /* background-color: #333; */
-    margin-top: 1rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  /* background-color: #333; */
+  margin-top: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .search-box .booking_date p.sat {
-    color: #1f71ff;
+  color: #1f71ff;
 }
 .search-box .booking_date p.sun {
-    color: rgb(255, 48, 48);
+  color: rgb(255, 48, 48);
 }
 .search-box .booking_date p:nth-of-type(2).on {
-    background-color: var(--main-color);
-    /* color: white; */
+  background-color: var(--main-color);
+  /* color: white; */
 }
 
 .search-box .booking_time_box,
 .search-box .booking_bun_box {
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
 }
 .search-box .booking_time_box .scroll,
 .search-box .booking_bun_box .scroll {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
-    width: 80rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  width: 80rem;
 }
 .search-box .booking_bun_box .scroll {
-    width: 100%;
+  width: 100%;
 }
 .search-box .booking_time_box .scroll button,
 .search-box .booking_bun_box .scroll button {
-    width: 6.3rem;
-    min-height: 4rem;
-    border-radius: 0.5rem;
-    font-size: 1.3rem;
-    text-align: center;
-    background-color: white;
+  width: 6.3rem;
+  min-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: white;
 }
 .search-box .booking_time_box .scroll button.on {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 .search-box .booking_bun_box .scroll button.on {
-    background-color: var(--sub-color-blue);
+  background-color: var(--sub-color-blue);
 }
 .search-box label {
-    border-radius: 0.5rem;
-    min-height: 3rem;
-    overflow: hidden;
+  border-radius: 0.5rem;
+  min-height: 3rem;
+  overflow: hidden;
 }
 .search-box > label:first-of-type {
-    width: calc(100% - 20.5rem);
+  width: calc(100% - 20.5rem);
 }
 .search-box > label:last-of-type {
-    width: 12rem;
+  width: 12rem;
 }
 .search-box label input {
-    box-sizing: border-box;
-    padding: 0 2rem;
+  box-sizing: border-box;
+  padding: 0 2rem;
 
-    width: 100%;
-    min-height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 .search-box .time {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    box-sizing: border-box;
-    padding: 0 1rem;
+  box-sizing: border-box;
+  padding: 0 1rem;
 
-    background-color: white;
+  background-color: white;
 }
 .search-box .time select {
-    border: none;
+  border: none;
 
-    width: 80%;
-    min-height: 100%;
+  width: 80%;
+  min-height: 100%;
 }
 .search-box .time img {
-    display: block;
-    width: 1.5rem;
-    min-height: auto;
+  display: block;
+  width: 1.5rem;
+  min-height: auto;
 }
 .search-box .booking_search {
-    padding: 0.5rem 0;
-    border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
 
-    width: 7rem;
+  width: 7rem;
 
-    color: var(--white);
+  color: var(--white);
 
-    background-color: var(--sub-color-blue);
+  background-color: var(--sub-color-blue);
 }
 
 .select-product {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
-    margin-top: 1rem;
+  margin-top: 1rem;
 
-    width: 100%;
-    min-height: 3rem;
+  width: 100%;
+  min-height: 3rem;
 }
 .select-product label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
 }
 .select-product select {
-    border: none;
+  border: none;
 
-    width: calc(100% - 9.5rem);
+  width: calc(100% - 9.5rem);
 
-    box-shadow: none;
+  box-shadow: none;
 }
 .select-product select:focus {
-    outline: 0;
-    box-shadow: none;
+  outline: 0;
+  box-shadow: none;
 }
 .tab-box {
-    width: 100%;
+  width: 100%;
 }
 .tab-box__tab-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 
-    width: 100%;
+  width: 100%;
 }
 .tab-box__tab-top__btn-tab {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 }
 .tab-box__tab-top__btn-tab button {
-    font-weight: 700;
-    color: var(--gray-2);
+  font-weight: 700;
+  color: var(--gray-2);
 }
 .tab-box__tab-top__btn-tab button.on {
-    color: var(--black);
+  color: var(--black);
 }
 .tab-box__tab-top__btn-box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
 }
 .tab-box__tab-top__btn-box button {
-    padding: 0.5rem 0;
-    border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
 
-    width: 7rem;
+  width: 7rem;
 
-    color: var(--black);
+  color: var(--black);
 
-    background-color: var(--sub-color-pink);
+  background-color: var(--sub-color-pink);
 }
 .tab-box__tab-top__btn-box button.btn-modal-pop-up {
-    box-sizing: border-box;
-    border: 0.1rem solid var(--main-color);
+  box-sizing: border-box;
+  border: 0.1rem solid var(--main-color);
 
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 .tab-box__tab-top__btn-box button.btn-modal-pop-up.open {
-    border: 0.1rem solid var(--black);
+  border: 0.1rem solid var(--black);
 }
 .tab-box__tab-cont-header,
 .tab-box__tab-cont {
-    width: 100%;
+  width: 100%;
 }
 .tab-box__tab-cont {
-    min-height: calc(100vh - 34rem);
-    overflow-y: auto;
+  min-height: calc(100vh - 34rem);
+  overflow-y: auto;
 }
 .tab-box__tab-cont > div {
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
 }
 .tab-box__tab-cont > div.on {
-    display: block;
+  display: block;
 }
 .tab-box__tab-cont-header .floor__row {
-    background-color: var(--gray-3);
+  background-color: var(--gray-3);
 }
 .tab-box__tab-cont-header .floor__row,
 .tab-box__tab-cont > div .floor__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .tab-box__tab-cont > div .floor__row {
-    border-bottom: 0.1rem solid var(--gray-3);
+  border-bottom: 0.1rem solid var(--gray-3);
 }
 
 .tab-box__tab-cont-header .floor__row .floor__row__col:first-of-type,
 .tab-box__tab-cont > div .floor__row .floor__row__col:first-of-type {
-    width: 12%;
+  width: 12%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(2),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(2) {
-    width: 22%;
+  width: 22%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(3),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(3) {
-    width: 22%;
+  width: 22%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(4),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(4) {
-    width: 22%;
+  width: 22%;
 }
 .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(5),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(5) {
-    width: 22%;
+  width: 22%;
 }
 /* .tab-box__tab-cont-header .floor__row .floor__row__col:nth-of-type(6),
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(6) {
@@ -770,23 +789,23 @@ input {
 .tab-box__tab-cont-header .floor__row .floor__row__col,
 .tab-box__tab-cont > div .floor__row .floor__row__col,
 .tab-box__tab-cont > div .floor__row .floor__row__col button {
-    min-height: 3.3rem;
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: 500;
-    box-sizing: border-box;
-    padding: 1rem 0.5rem;
-    font-size: 1rem;
+  min-height: 3.3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
 }
 .tab-box__tab-cont > div .floor__row .floor__row__col {
-    border-right: 0.1rem solid var(--gray-3);
+  border-right: 0.1rem solid var(--gray-3);
 }
 .tab-box__tab-cont > div .floor__row .floor__row__col:first-of-type {
-    border-left: 0.1rem solid var(--gray-3);
+  border-left: 0.1rem solid var(--gray-3);
 }
 
 .tab-box__tab-cont > div .floor__row .floor__row__col:nth-of-type(3) {
-    background-color: var(--sub-color-blue);
+  background-color: var(--sub-color-blue);
 }
 
 /* .tab-box__tab-cont-header
@@ -811,21 +830,21 @@ input {
     background-color: var(--white);
 } */
 .tab-box__tab-cont > div .floor__row .floor__row__col button {
-    display: inline-block;
+  display: inline-block;
 
-    box-sizing: border-box;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
 
-    width: 100%;
-    min-height: 100%;
+  width: 100%;
+  min-height: 100%;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .tab-box__tab-cont > div .floor__row .floor__row__col:last-of-type.on {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 /* .tab-box__tab-cont > div .floor__row .floor__row__col button {
     display: inline-block;
@@ -847,10 +866,10 @@ input {
     background-color: var(--sub-color-pink);
 } */
 .tab-box__tab-cont > div .floor__row .floor__row__col.used {
-    background-color: var(--gray-2);
+  background-color: var(--gray-2);
 }
 .tab-box__tab-cont > div .floor__row .floor__row__col.short {
-    background-color: var(--sub-color-pink);
+  background-color: var(--sub-color-pink);
 }
 /* .tab-box__tab-cont > div .floor__row .floor__row__col:last-of-type.used button {
     cursor: default;
@@ -860,477 +879,571 @@ input {
 } */
 
 .pop-up {
-    display: none;
+  display: none;
 
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 
-    /* backdrop-filter: blur(0.5rem); */
-    background-color: #cccccc94;
+  /* backdrop-filter: blur(0.5rem); */
+  background-color: #cccccc94;
 
-    /* z-index: 999999; */
+  /* z-index: 999999; */
 }
 .pop-up__inner {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
-    box-sizing: border-box;
-    border-radius: 2rem;
-    padding: 2rem 3.5rem 3rem;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  padding: 2rem 3.5rem 3rem;
 
-    width: 100%;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
-        0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
-    background-color: var(--white);
+  width: 100%;
+  box-shadow:
+    0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
+    0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
+  background-color: var(--white);
 }
 .pop-up__title {
-    position: relative;
+  position: relative;
 
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 
-    width: 100%;
+  width: 100%;
 
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
 }
 .pop-up__title button {
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
 
-    width: 1.6rem;
+  width: 1.6rem;
 }
 .modal_row {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .modal_row P:first-of-type {
-    font-weight: bold;
-    margin-right: 1rem;
-    margin-right: 1rem;
-    /* width: 20rem; */
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-right: 1rem;
+  /* width: 20rem; */
 }
 .modal_row.position,
 .modal_row.check {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .modal_row.time {
-    border-bottom: 0.1rem solid var(--gray-3);
-    padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid var(--gray-3);
+  padding-bottom: 1.5rem;
 }
 .modal_row .time_box {
-    width: 100%;
-    margin-top: 0.5rem;
-    overflow-x: auto;
+  width: 100%;
+  margin-top: 0.5rem;
+  overflow-x: auto;
 }
 .modal_row .time_box .scroll {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
-    width: 130rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  width: 130rem;
 }
 .modal_row .modal_col {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 .modal_row .modal_col:first-of-type {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 /* .modal_row:first-of-type .modal_col:not(:first-of-type), */
 .modal_row.time .time_box button {
-    width: 10rem;
-    min-height: 4rem;
-    border: 0.1rem solid var(--gray-3);
-    border-radius: 0.5rem;
+  width: 10rem;
+  min-height: 4rem;
+  border: 0.1rem solid var(--gray-3);
+  border-radius: 0.5rem;
 
-    color: var(--gray-2);
-    font-size: 1.3rem;
+  color: var(--gray-2);
+  font-size: 1.3rem;
 
-    text-align: center;
+  text-align: center;
 }
 .modal_row.time .time_box button.on {
-    color: var(--white);
-    border: 0.1rem solid var(--main-color);
-    background-color: var(--main-color);
+  color: var(--white);
+  border: 0.1rem solid var(--main-color);
+  background-color: var(--main-color);
 }
 .ck_red {
-    color: red;
-    margin-top: 3rem;
-    font-size: 1.2rem;
-    line-min-height: 1.1;
+  color: red;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  line-min-height: 1.1;
 }
 .btn_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 .btn_box button {
-    width: 100%;
-    min-height: 4rem;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 1.3rem;
-    background-color: var(--main-color);
+  width: 100%;
+  min-height: 4rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.3rem;
+  background-color: var(--main-color);
 }
 
 /* checkin */
 .scan {
-    padding: 8rem 0 0;
+  padding: 8rem 0 0;
 }
 .scan-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 
-    width: 100%;
+  width: 100%;
 }
 .scan__qr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    width: 50%;
+  width: 50%;
 }
 .scan__qr span {
-    display: inline-block;
+  display: inline-block;
 
-    margin: 0 auto 2rem;
+  margin: 0 auto 2rem;
 
-    min-height: 14rem;
+  min-height: 14rem;
 }
 .scan__qr p {
-    font-size: 1.3rem;
-    font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 .scan__qr p:last-of-type {
-    margin-top: 1rem;
+  margin-top: 1rem;
 
-    font-size: 1.6rem;
-    color: var(--gray-2);
+  font-size: 1.6rem;
+  color: var(--gray-2);
 }
 .user-info {
-    box-sizing: border-box;
-    padding: 3.5rem;
-    border-radius: 2rem 2rem 0 0;
+  box-sizing: border-box;
+  padding: 3.5rem;
+  border-radius: 2rem 2rem 0 0;
 
-    width: 100%;
-    min-height: calc(100% - 30rem);
+  width: 100%;
+  min-height: calc(100% - 30rem);
 
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 .user-info h6 {
-    margin-bottom: 2rem;
-    font-weight: 700;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 .user-info p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-min-height: 2;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-min-height: 2;
 }
 
 /* purchase */
 .search-box.search-date > label {
-    width: 49%;
+  width: 49%;
 }
 
 .list {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
 }
 
 .list li,
 .list > div {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  gap: 1rem;
 
-    box-sizing: border-box;
-    padding: 2rem;
-    border-radius: 1rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
 
-    width: 100%;
+  width: 100%;
 
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .list li p:first-child,
 .list > div > p:first-child {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .list li p span {
-    padding-right: 1rem;
-    margin-right: 0.5rem;
-    border-right: 0.1rem solid #333;
+  padding-right: 1rem;
+  margin-right: 0.5rem;
+  border-right: 0.1rem solid #333;
 }
+/* 고도화 */
+.list.alert li p {
+  position: relative;
+
+  display: -webkit-box;
+  overflow: hidden;
+
+  margin: 0;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.list.alert li.new p:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+.list.alert li.new p:first-of-type::after {
+  content: 'N';
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+
+  font-size: 14px;
+  font-weight: 900;
+  color: red;
+
+  border-radius: 50%;
+}
+/* 고도화 끝 */
 
 /* use */
 .use-search .select-date {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .use-search .select-product > label,
 .use-search .select-date > label {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 5rem !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 5rem !important;
 }
 .use-search > .select-product > select,
 .use-search > .select-date > div {
-    width: calc(100% - 5.5rem);
+  width: calc(100% - 5.5rem);
 }
 .use-search > .select-date > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 .use-search > .select-date > div label {
-    width: calc((100% - 1rem) / 2);
+  width: calc((100% - 1rem) / 2);
 }
 .list > div > p:first-child > span {
-    margin-left: 1rem;
-    font-size: 1.3rem;
-    color: red;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  color: red;
 }
 .list__use {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .list__use div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
 }
 .list__use p {
-    width: 100%;
-    font-size: 1.3rem;
+  width: 100%;
+  font-size: 1.3rem;
 }
 .list__use p span {
-    display: inline-block;
-    width: 2rem;
+  display: inline-block;
+  width: 2rem;
 }
 
-/* product */
+/* 고도화 */
+/* 상품구매 */
 .product {
-    position: relative;
+  position: relative;
 
-    box-sizing: border-box;
-    border-radius: 1rem;
-    padding: 2rem 0;
-    width: 100%;
+  display: inline-block;
 
-    background-color: #fff;
-    margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  width: 100%;
+  height: 18rem;
+
+  background: url('/img/assets/img_ticket_bg.svg') no-repeat center center /
+    cover;
+  margin-bottom: 1rem;
+}
+.product * {
+  color: #fff;
 }
 .product.on {
-    background-color: #333;
-
-    .name,
-    .option-info-box > p,
-    .check-point {
-        color: #fff;
-    }
+  background: url('/img/assets/img_ticket_bg_on.svg') no-repeat center center /
+    cover;
 }
 .product:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .product::before,
 .product::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
+  content: '';
+  display: inline-block;
+  position: absolute;
 
-    bottom: 4.3rem;
+  bottom: 30%;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    width: 3rem;
-    aspect-ratio: 1 / 1;
-    background-color: var(--gray-4);
-    z-index: 1;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--gray-4);
+  z-index: 1;
 }
 .product::before {
-    left: -1.5rem;
+  left: -1.5rem;
 }
 .product::after {
-    right: -1.5rem;
+  right: -1.5rem;
 }
 .name {
-    font-size: 2rem;
-    padding: 0 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
 }
 .option-info-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    box-sizing: border-box;
-    padding: 2rem 3rem;
-    border-bottom: 0.1rem dashed var(--gray-2);
+  position: relative;
+  height: 60%;
+  box-sizing: border-box;
+  padding: 2rem 3rem 0;
+  border-bottom: 0.1rem dashed var(--gray-2);
 }
-
-.option-info-box > p span {
-    font-size: 2.8rem;
-    margin: 0 0.2rem;
+.option-info-box span {
+  display: inline-block;
+  width: 100%;
 }
-.option-box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
+.option-info-box span:nth-of-type(2) {
+  font-size: 1.3rem;
+  margin-top: 1.8rem;
 }
-.option-box p {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
+.product.prefer .option-info-box:after,
+.product.best .option-info-box:after,
+.product.popular .option-info-box:after,
+.product.premium .option-info-box:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 72px;
+  height: 56px;
 }
-.option-box p span :first-of-type {
-    display: block;
-    width: 3rem;
+.product.prefer .option-info-box:after {
+  background: url('/img/assets/ico_label_prefer.svg') no-repeat center center /
+    cover;
+}
+.product.best .option-info-box:after {
+  background: url('/img/assets/ico_label_best.svg') no-repeat center center /
+    cover;
+}
+.product.popular .option-info-box:after {
+  background: url('/img/assets/ico_label_popular.svg') no-repeat center center /
+    cover;
+}
+.product.premium .option-info-box:after {
+  background: url('/img/assets/ico_label_premium.svg') no-repeat center center /
+    cover;
 }
 .check-point {
-    padding: 2rem 3rem 0;
+  height: 40%;
+  padding: 1.5rem 3rem 0;
 }
+.check-point p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.check-point span {
+  display: inline-block;
+  width: 100%;
+}
+.purchase_box {
+  margin-top: 10px;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  background-color: white;
+}
+.purchase_box div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.purchase_box div:nth-of-type(2) {
+  margin: 1rem 0 2rem;
+}
+.purchase_box div p {
+  position: relative;
+  width: 9rem;
+}
+.purchase_box div p::before {
+  content: ':';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.purchase_box div:nth-of-type(2) span {
+  font-weight: bold;
+}
+.purchase_box div.btn_box button:last-of-type {
+  color: #a3a3a3;
+  background-color: var(--gray-4);
+}
+/* 고도화 끝 */
 
 .footer-link {
-    display: inline-block;
-    margin: 0 1.2rem;
-    font-size: 1.4rem;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .footer-link:hover {
-    color: #666;
+  color: #666;
 }
 
 .footer-text {
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-    /* color: #999; */
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  /* color: #999; */
 }
 
 /* 티켓 css*/
 .ticket {
-    width: 100%;
-    max-width: 60rem;
-    display: flex;
-    background: #fff;
-    position: relative;
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  background: #fff;
+  position: relative;
 
-    border: none;
-    border-radius: 1rem;
-    overflow: hidden;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .ticket::before,
 .ticket::after {
-    content: '';
-    position: absolute;
-    width: 3rem;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background-color: #f6f6f6;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
+  content: '';
+  position: absolute;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
 /* 왼쪽 색 블록 */
 .ticket-left {
-    background-color: #97af8f;
-    width: 5rem;
-    min-min-height: 3rem;
-    position: relative;
+  background-color: #97af8f;
+  width: 5rem;
+  min-min-height: 3rem;
+  position: relative;
 }
 .ticket::before {
-    left: -1.5rem;
+  left: -1.5rem;
 }
 
 .ticket::after {
-    right: -1.5rem;
+  right: -1.5rem;
 }
 
 /*  점선 추가 */
 .ticket-left::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 0.1rem;
-    border-right: 0.2rem dashed #f0fff0;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0.1rem;
+  border-right: 0.2rem dashed #f0fff0;
 }
 
 /* 오른쪽 내용 영역 */
 .ticket-right {
-    flex-grow: 1;
-    padding: 2rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-grow: 1;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* 텍스트 구성 */
 .route {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
 }
 .to {
-    font-size: 1.8rem;
-    font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
 .time {
-    font-size: 1.4rem;
-    color: #555;
-    display: flex;
-    gap: 0.2rem;
+  font-size: 1.4rem;
+  color: #555;
+  display: flex;
+  gap: 0.2rem;
 }
 
 .details {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: red;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: red;
 }

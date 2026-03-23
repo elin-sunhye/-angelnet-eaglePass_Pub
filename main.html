@@ -1,178 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eagle Pass 골프</title>
-        <meta name="description" content="Eagle Pass 골프" />
-        <meta name="keywords" content="Eagle Pass 골프" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="./img/og.png" />
-        <meta property="og:title" content="Eagle Pass 골프" />
-        <meta property="og:description" content="Eagle Pass 골프" />
-        <link rel="stylesheet" href="./css/common.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/response.css" />
-        <script src="./js/swiper.8.4.7.js"></script>
-        <script src="./js/jquery.3.1.1.js"></script>
-    </head>
-    <body>
-        <!-- !!!!!!! freepik 무료 아이콘을 사용해서 웹 아이콘 출처 꼭 남기셔야합니다. !!!!!!!
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eagle Pass 골프</title>
+    <meta name="description" content="Eagle Pass 골프" />
+    <meta name="keywords" content="Eagle Pass 골프" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/og.png" />
+    <meta property="og:title" content="Eagle Pass 골프" />
+    <meta property="og:description" content="Eagle Pass 골프" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/response.css" />
+    <script src="./js/swiper.8.4.7.js"></script>
+    <script src="./js/jquery.3.1.1.js"></script>
+  </head>
+  <body>
+    <!-- !!!!!!! freepik 무료 아이콘을 사용해서 웹 아이콘 출처 꼭 남기셔야합니다. !!!!!!!
         "https://www.flaticon.com/kr/free-icons/
         웹 페이지 아이콘 제작자: Freepik - Flaticon"
         이 텍스트는 앱스토어 설명서 등 나타낼 수 있는 곳 어디든 꼭 있어야합니다.
         -->
-        <div class="wrap">
-            <!-- header -->
-            <header class="main">
-                <h1>
-                    <img
-                        src="./img/assets/logo_white_1.svg"
-                        alt="로고 화이트 이미지"
-                    />
-                </h1>
-                <div class="right">
-                    <a href="./main.html">
-                        <img
-                            src="./img/assets/ico_setting_white.svg"
-                            alt="설정아이콘"
-                        />
-                    </a>
-                </div>
-            </header>
-
-            <div class="container golf-club">
-                <!-- <h3 class="golf-club__img">
-                    <img
-                        src="./img/assets/img_golf_club.svg"
-                        alt="골프장 이미지"
-                    />
-                </h3> -->
-                <div class="golf-club__info">
-                    <p>아시아나 골프클럽</p>
-                    <p>
-                        <span>TEL 051-903-2000</span> | 부산 동래구 사직동
-                        234번지
-                    </p>
-                </div>
-            </div>
-
-            <div class="container bottom">
-                <!-- <div class="membership-card">
-                    <p class="membership-card__title">모바일 회원증</p>
-                    <p class="membership-card__name">박희규 고객님</p>
-                    <p class="membership-card__num">회원번호 25-1234-5678</p>
-                </div> -->
-
-                <div class="quick-menu-box">
-                    <!-- <div class="quick-menu-box__transfer">
-                        <span
-                            ><img
-                                src="./img/assets/ico_purchase.svg"
-                                alt="티켓 아이콘"
-                        /></span>
-                        <p>남아있는 쿠폰은 양도가 가능합니다.</p>
-                        <button type="button">양도하기</button>
-                    </div> -->
-
-                    <div class="quick-menu-box__menu">
-                        <a href="./booking.html">
-                            <span
-                                ><img
-                                    src="./img/assets/ico_booking_2.svg"
-                                    alt="타석 예약 아이콘"
-                            /></span>
-                            타석예약
-                            <span class="ico_arrow_booking"
-                                ><img
-                                    src="./img/assets/ico_double_arrow.svg"
-                                    alt="화실표 아이콘"
-                            /></span>
-                        </a>
-                        <a href="./checkin.html">
-                            <span
-                                ><img
-                                    src="./img/assets/ico_main_checkin_2.svg"
-                                    alt="체크인 아이콘"
-                            /></span>
-                            체크인
-                        </a>
-                        <a href="./checkin.html">
-                            <span
-                                ><img
-                                    src="./img/assets/ico_main_booking_check_2.svg"
-                                    alt="예약확인 아이콘"
-                            /></span>
-                            예약확인
-                        </a>
-                        <a href="./purchase.html">
-                            <span
-                                ><img
-                                    src="./img/assets/ico_main_purchase_2.svg"
-                                    alt="구매내역 아이콘"
-                            /></span>
-                            구매내역
-                        </a>
-                        <a href="./use.html">
-                            <span
-                                ><img
-                                    src="./img/assets/ico_main_use_2.svg"
-                                    alt="이용내역 아이콘"
-                            /></span>
-                            이용내역
-                        </a>
-                        <a href="./product.html">
-                            <span
-                                ><img
-                                    src="./img/assets/ico_main_product_2.svg"
-                                    alt="상품구매 아이콘"
-                            /></span>
-                            상품구매
-                        </a>
-                        <a href="./main.html">
-                            <span
-                                ><img
-                                    src="./img/assets/ico_main_notice_2.svg"
-                                    alt="공지사항 아이콘"
-                            /></span>
-                            공지사항
-                        </a>
-                    </div>
-                </div>
-
-                <div class="notice_box">
-                    <p class="chip">공지사항</p>
-                    <div class="notice_list">
-                        <p>🔔 4월 5일 식목일은 정기휴무입니다.</p>
-                        <p>🔔 봄맞이 행사 3개월 회원권 판매 개시</p>
-                    </div>
-                </div>
-
-                <div class="membership">
-                    <p class="chip">이용중인 상품</p>
-                    <div
-                        class="membership__row"
-                        style="flex-direction: column; align-items: flex-start"
-                    >
-                        <div class="ticket">
-                            <div class="ticket-left"></div>
-                            <div class="ticket-right">
-                                <div class="route">
-                                    <span class="to">엔젤넷 10분</span>
-                                </div>
-                                <div class="time">
-                                    <span>만료일: 2025-09-10</span>
-                                </div>
-
-                                <div class="details">
-                                    <span>모바일 예약 불가</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="wrap">
+      <!-- header -->
+      <header class="main">
+        <h1>
+          <img src="./img/assets/logo_white_1.svg" alt="로고 화이트 이미지" />
+        </h1>
+        <div class="right">
+          <!-- 고도화 -->
+          <a href="./alarm.html">
+            <!-- <img src="./img/assets/ico_alert_white.svg" alt="알림아이콘" /> -->
+            <img src="./img/assets/ico_alert_red.svg" alt="알림아이콘" />
+          </a>
+          <!-- 고도화 끝 -->
+          <a href="./main.html">
+            <img src="./img/assets/ico_setting_white.svg" alt="설정아이콘" />
+          </a>
         </div>
-        <script src="./js/common.js"></script>
-    </body>
+      </header>
+
+      <div class="container golf-club">
+        <div class="golf-club__info">
+          <p>아시아나 골프클럽</p>
+          <p><span>TEL 051-903-2000</span> | 부산 동래구 사직동 234번지</p>
+        </div>
+      </div>
+
+      <div class="container bottom">
+        <div class="quick-menu-box">
+          <div class="quick-menu-box__menu">
+            <a href="./booking.html">
+              <span
+                ><img
+                  src="./img/assets/ico_booking_2.svg"
+                  alt="타석 예약 아이콘"
+              /></span>
+              타석예약
+              <span class="ico_arrow_booking"
+                ><img
+                  src="./img/assets/ico_double_arrow.svg"
+                  alt="화실표 아이콘"
+              /></span>
+            </a>
+            <a href="./checkin.html">
+              <span
+                ><img
+                  src="./img/assets/ico_main_checkin_2.svg"
+                  alt="체크인 아이콘"
+              /></span>
+              체크인
+            </a>
+            <a href="./checkin.html">
+              <span
+                ><img
+                  src="./img/assets/ico_main_booking_check_2.svg"
+                  alt="예약확인 아이콘"
+              /></span>
+              예약확인
+            </a>
+            <a href="./purchase.html">
+              <span
+                ><img
+                  src="./img/assets/ico_main_purchase_2.svg"
+                  alt="구매내역 아이콘"
+              /></span>
+              구매내역
+            </a>
+            <a href="./use.html">
+              <span
+                ><img
+                  src="./img/assets/ico_main_use_2.svg"
+                  alt="이용내역 아이콘"
+              /></span>
+              이용내역
+            </a>
+            <a href="./product.html">
+              <span
+                ><img
+                  src="./img/assets/ico_main_product_2.svg"
+                  alt="상품구매 아이콘"
+              /></span>
+              상품구매
+            </a>
+            <!-- 고도화 -->
+            <a href="./transfer.html">
+              <span
+                ><img
+                  src="./img/assets/ico_main_transfer.svg"
+                  alt="양도양수 아이콘"
+              /></span>
+              양도양수
+            </a>
+            <!-- 고도화 끝 -->
+          </div>
+        </div>
+
+        <div class="notice_box">
+          <p class="chip">공지사항</p>
+          <div class="notice_list">
+            <p>🔔 4월 5일 식목일은 정기휴무입니다.</p>
+            <p>🔔 봄맞이 행사 3개월 회원권 판매 개시</p>
+          </div>
+        </div>
+
+        <div class="membership">
+          <p class="chip">이용중인 상품</p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/common.js"></script>
+  </body>
 </html>
