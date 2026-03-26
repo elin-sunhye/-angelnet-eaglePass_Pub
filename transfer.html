@@ -95,7 +95,7 @@
         </ul>
       </nav>
 
-      <div class="container">
+      <div class="container transfer">
         <div class="tab-box">
           <div class="tab-box__tab-top">
             <div class="tab-box__tab-top__btn-tab">
@@ -105,9 +105,439 @@
             </div>
           </div>
           <div class="tab-box__tab-cont">
-            <div class="on">123</div>
-            <div>456</div>
-            <div>789</div>
+            <div class="on">
+              <div class="gray_box">
+                <div class="row">
+                  <label for="coupon">양도할 쿠폰</label>
+                  <div>
+                    <select form="coupon" class="form-select">
+                      <option selected>쿠폰 선택</option>
+                      <option value="1">쿠폰 1</option>
+                      <option value="2">쿠폰 2</option>
+                      <option value="3">쿠폰 3</option>
+                    </select>
+                    <div class="white_box">
+                      <p>사용 가능 : 37회</p>
+                      <p>| 유효기간 : 2026.06.23</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="count">양도할 수량</label>
+                  <div>
+                    <input
+                      type="number"
+                      id="count"
+                      class="form-control"
+                      placeholder="쿠폰 수량 입력"
+                    />
+                    <p>남은 수량 : 17회</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gray_box">
+                <div class="row">
+                  <label for="coupon">받는 사람 조회</label>
+                  <div>
+                    <input
+                      type="text"
+                      id="count"
+                      class="form-control"
+                      placeholder="이름 입력"
+                    />
+                    <input
+                      type="number"
+                      id="count"
+                      class="form-control"
+                      placeholder="전화번호 뒷자리 입력"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    <div class="white_box result_box">
+                      <!-- 결과 없으면 -->
+                      <!-- <p>조회 결과가 없습니다.</p> -->
+                      <!-- 결과 있으면 -->
+                      <ul>
+                        <li>
+                          <input
+                            type="radio"
+                            id="홍길동"
+                            name="name"
+                            value="홍길동"
+                          />
+                          <label for="홍길동">
+                            <p>홍길동</p>
+                            <span>010-22**-0043</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="홍길동2"
+                            name="name"
+                            value="홍길동2"
+                          />
+                          <label for="홍길동2">
+                            <p>홍길동2</p>
+                            <span>010-19**-0043</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <p>** 쿠폰 양도 후 취소가 불가합니다.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 받을 사람 클릭하면 나오는 박스 -->
+              <div class="gray_box purchase_box one">
+                <h4>정말 양도 하시겠습니까?</h4>
+                <div>
+                  <p>받을 사람</p>
+                  <span>홍길동 | 010-22**-0043</span>
+                </div>
+                <div>
+                  <p>양도할 쿠폰</p>
+                  <span>일일 쿠폰 10회권 (24시간)</span>
+                </div>
+                <div>
+                  <p>양도할 수량</p>
+                  <span>20회</span>
+                </div>
+
+                <div class="btn_box">
+                  <button type="button" class="btn_transfer">양도</button>
+                  <button type="button" class="btn_transfer_cancel">
+                    취소
+                  </button>
+                </div>
+              </div>
+
+              <!-- 받을 사람 클릭하면 나오는 박스 -->
+              <div class="gray_box purchase_box two">
+                <h4>양도 결과</h4>
+                <div>
+                  <p>양도 일시</p>
+                  <span>2026.03.25 15:43</span>
+                </div>
+                <div>
+                  <p>받을 사람</p>
+                  <span>홍길동 | 010-22**-0043</span>
+                </div>
+                <div>
+                  <p>양도할 쿠폰</p>
+                  <span>일일 쿠폰 10회권 (24시간)</span>
+                </div>
+                <div>
+                  <p>양도할 수량</p>
+                  <span>20회</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <ul class="list">
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+                <li>
+                  <p>일일쿠폰 10회권 (24시간)</p>
+                  <div>
+                    <p>보낸 사람</p>
+                    <span>홍길동 | 010-23**-0043</span>
+                  </div>
+                  <div>
+                    <p>양수 일시</p>
+                    <span>2026.04.03 14:56</span>
+                  </div>
+                  <div>
+                    <p>양수 갯수</p>
+                    <span>10회</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="history">
+              <div class="search-box search-date">
+                <label>
+                  <input type="date" name="startDt" />
+                </label>
+                <label>
+                  <input type="date" name="endDt" />
+                </label>
+                <select name="period" id="period" class="form-select">
+                  <option value="1">전체</option>
+                  <option value="2">양도</option>
+                  <option value="3">양수</option>
+                </select>
+                <div class="btn_box">
+                  <button type="button">1개월</button>
+                  <button type="button">6개월</button>
+                  <button type="button">12개월</button>
+                </div>
+              </div>
+              <div class="list_wrap">
+                <ul class="list">
+                  <li>
+                    <p>
+                      일일쿠폰 10회권 (24시간) <span class="send">양도</span>
+                    </p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>
+                      일일쿠폰 10회권 (24시간) <span class="receive">양수</span>
+                    </p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>일일쿠폰 10회권 (24시간)</p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>일일쿠폰 10회권 (24시간)</p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>일일쿠폰 10회권 (24시간)</p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>일일쿠폰 10회권 (24시간)</p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>일일쿠폰 10회권 (24시간)</p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>일일쿠폰 10회권 (24시간)</p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p>일일쿠폰 10회권 (24시간)</p>
+                    <div>
+                      <p>보낸 사람</p>
+                      <span>홍길동 | 010-23**-0043</span>
+                    </div>
+                    <div>
+                      <p>양수 일시</p>
+                      <span>2026.04.03 14:56</span>
+                    </div>
+                    <div>
+                      <p>양수 갯수</p>
+                      <span>10회</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

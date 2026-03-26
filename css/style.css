@@ -1076,7 +1076,7 @@ input {
   justify-self: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -1447,3 +1447,262 @@ input {
   font-size: 1.2rem;
   color: red;
 }
+
+/* 고도화 */
+/* 양도 */
+.wrap:has(.transfer) {
+  background-color: var(--white);
+}
+.transfer .tab-box {
+  height: 100%;
+}
+.transfer .tab-box__tab-cont {
+  height: calc(100% - 2.1rem);
+}
+.transfer .tab-box__tab-cont > div {
+  height: 100%;
+  overflow-y: auto;
+}
+.transfer .tab-box__tab-cont .gray_box {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: var(--gray-4);
+  margin-bottom: 1rem;
+}
+.transfer .tab-box__tab-cont .gray_box .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.transfer .tab-box__tab-cont .gray_box .row:first-of-type {
+  margin-bottom: 1rem;
+}
+.transfer .tab-box__tab-cont .gray_box .row:last-of-type {
+  margin-bottom: 0 !important;
+}
+.transfer .tab-box__tab-cont .gray_box .row * {
+  padding: 0;
+}
+.transfer .tab-box__tab-cont .gray_box .row label {
+  width: 80px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+.transfer .tab-box__tab-cont .gray_box .row div {
+  width: 100%;
+}
+.transfer
+  .tab-box__tab-cont
+  .gray_box
+  .row:has(label):not(:has(.result_box))
+  > div {
+  width: calc(100% - 80px);
+}
+.transfer .tab-box__tab-cont .gray_box .row div:has(input[type='number']) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transfer .tab-box__tab-cont .gray_box .row div select,
+.transfer .tab-box__tab-cont .gray_box .row div input {
+  height: 2.5rem;
+  padding: 0 0.5rem;
+}
+.transfer .tab-box__tab-cont .gray_box .row div input,
+.transfer .tab-box__tab-cont .gray_box .row div input + p {
+  width: 49%;
+}
+.transfer .tab-box__tab-cont .gray_box .row div .white_box {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  background-color: var(--white);
+}
+.transfer .tab-box__tab-cont .gray_box .row div .white_box p {
+  font-size: 1.3rem;
+}
+.transfer .tab-box__tab-cont .gray_box .row > div > p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: red;
+}
+.transfer .tab-box__tab-cont .gray_box .row .white_box.result_box {
+  margin-bottom: 1rem;
+  height: 15rem;
+  overflow-y: auto;
+}
+.transfer .tab-box__tab-cont .gray_box .row .white_box.result_box * {
+  font-size: 1.5rem;
+}
+.transfer .tab-box__tab-cont .gray_box .row .white_box.result_box ul,
+.transfer .tab-box__tab-cont .gray_box .row .white_box.result_box ul li {
+  width: 100%;
+}
+.transfer .tab-box__tab-cont .gray_box .row .white_box.result_box ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.transfer
+  .tab-box__tab-cont
+  .gray_box
+  .row
+  .white_box.result_box
+  ul
+  li:last-of-type {
+  margin-bottom: 0;
+}
+.transfer
+  .tab-box__tab-cont
+  .gray_box
+  .row
+  .white_box.result_box
+  ul
+  li
+  input[type='radio'] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.transfer .tab-box__tab-cont .gray_box .row .white_box.result_box ul li label {
+  width: calc(100% - 2rem);
+  margin-top: 0;
+}
+.transfer .tab-box__tab-cont .gray_box .row .white_box.result_box ul li label p,
+.transfer
+  .tab-box__tab-cont
+  .gray_box
+  .row
+  .white_box.result_box
+  ul
+  li
+  label
+  span {
+  display: inline-flex;
+}
+.transfer
+  .tab-box__tab-cont
+  .gray_box
+  .row
+  .white_box.result_box
+  ul
+  li
+  label
+  p {
+  width: 6rem;
+}
+.transfer .tab-box__tab-cont .gray_box.purchase_box {
+  display: none;
+}
+.transfer .tab-box__tab-cont .gray_box.purchase_box.on {
+  display: block;
+}
+.transfer .tab-box__tab-cont .gray_box.purchase_box h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.transfer .tab-box__tab-cont .gray_box.purchase_box > div {
+  margin-bottom: 1rem;
+}
+.transfer .tab-box__tab-cont .gray_box.purchase_box > div p,
+.transfer .tab-box__tab-cont .gray_box.purchase_box > div span {
+  font-size: 1.3rem;
+}
+.transfer .tab-box__tab-cont .gray_box.purchase_box > div span {
+  font-weight: bold;
+}
+.transfer .tab-box__tab-cont .gray_box.purchase_box > div:last-of-type {
+  margin-bottom: 2rem;
+}
+.transfer
+  .tab-box__tab-cont
+  .gray_box.purchase_box
+  .btn_box
+  button:last-of-type {
+  background-color: var(--white);
+}
+/* 양수 */
+.transfer .list li {
+  gap: 0.5rem;
+  background-color: var(--gray-4);
+}
+.transfer .list li > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.transfer .list li > div p,
+.transfer .list li > div span {
+  position: relative;
+  width: 9rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+.transfer .list li > div p {
+  margin-bottom: 0;
+}
+.transfer .list li > div p::before {
+  content: ':';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.transfer .list li > div span {
+  width: calc(100% - 9rem);
+}
+/* 내역 */
+.history .search-box {
+  margin-bottom: 1.5rem;
+}
+.history .search-box label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.5rem;
+  border: 1px solid var(--gray-3);
+}
+.history .search-box select {
+  margin: 0.5rem 0;
+}
+.history .search-box .btn_box {
+  width: 100%;
+  margin: 0;
+}
+.history .list_wrap {
+  height: calc(100% - 120px);
+  overflow-y: auto;
+}
+.history .list_wrap .list li > p span {
+  font-size: 1.3rem;
+  padding: none;
+  margin: none;
+  border: none;
+  font-weight: bold;
+}
+.history .list_wrap .list li > p span::before {
+  content: '';
+  display: inline-block;
+  width: 0.2rem;
+  height: 1.2rem;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  background-color: var(--black);
+}
+.history .list_wrap .list li > p span.send {
+  color: #0058f1;
+}
+.history .list_wrap .list li > p span.receive {
+  color: red;
+}
+/* 고도화 끝 */
