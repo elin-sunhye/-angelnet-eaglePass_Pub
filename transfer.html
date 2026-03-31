@@ -1,4 +1,3 @@
-<!-- 고도화 -->
 <!doctype html>
 <html lang="ko">
   <head>
@@ -107,6 +106,7 @@
           <div class="tab-box__tab-cont">
             <div class="on">
               <div class="gray_box">
+                <!-- 20260331 -->
                 <div class="row">
                   <label for="coupon">양도할 쿠폰</label>
                   <div>
@@ -116,12 +116,17 @@
                       <option value="2">쿠폰 2</option>
                       <option value="3">쿠폰 3</option>
                     </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
                     <div class="white_box">
                       <p>사용 가능 : 37회</p>
-                      <p>| 유효기간 : 2026.06.23</p>
+                      <p>유효기간 : 2026.06.23</p>
                     </div>
                   </div>
                 </div>
+                <!-- 20260331 끝 -->
                 <div class="row">
                   <label for="count">양도할 수량</label>
                   <div>
@@ -143,13 +148,13 @@
                       type="text"
                       id="count"
                       class="form-control"
-                      placeholder="이름 입력"
+                      placeholder="이름"
                     />
                     <input
                       type="number"
                       id="count"
                       class="form-control"
-                      placeholder="전화번호 뒷자리 입력"
+                      placeholder="휴대폰 끝 4자리"
                     />
                   </div>
                 </div>
@@ -160,6 +165,7 @@
                       <!-- <p>조회 결과가 없습니다.</p> -->
                       <!-- 결과 있으면 -->
                       <ul>
+                        <!-- 20260331 -->
                         <li>
                           <input
                             type="radio"
@@ -184,6 +190,43 @@
                             <span>010-19**-0043</span>
                           </label>
                         </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="홍길동3"
+                            name="name"
+                            value="홍길동3"
+                          />
+                          <label for="홍길동3">
+                            <p>홍길동3</p>
+                            <span>010-19**-0043</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="홍길동4"
+                            name="name"
+                            value="홍길동4"
+                          />
+                          <label for="홍길동4">
+                            <p>홍길동4</p>
+                            <span>010-19**-0043</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="홍길동5"
+                            name="name"
+                            value="홍길동5"
+                          />
+                          <label for="홍길동5">
+                            <p>홍길동5</p>
+                            <span>010-19**-0043</span>
+                          </label>
+                        </li>
+                        <!-- 20260331 끝 -->
                       </ul>
                     </div>
                     <p>** 쿠폰 양도 후 취소가 불가합니다.</p>
@@ -545,4 +588,3 @@
     <script src="./js/common.js"></script>
   </body>
 </html>
-<!-- 고도화 끝 -->

@@ -205,7 +205,6 @@ $(document).on('click', '.product', function () {
   }
 });
 
-// 고도화
 // 양도 받을 사람 클릭
 $(document).on('click', '.white_box.result_box ul li', function () {
   // purchase_box 활성화
@@ -233,5 +232,3 @@ $(document).on('click', '.btn_transfer', function (e) {
   // purchase_box 활성화
   $('.gray_box.purchase_box.two').addClass('on');
 });
-
-// 고도화 끝

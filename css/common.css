@@ -192,8 +192,6 @@ button {
 input::-webkit-date-and-time-value {
   text-align: left;
 }
-/* 고도화 */
 input[type='radio'] {
   -webkit-appearance: checkbox;
 }
-/* 고도화 끝 */
