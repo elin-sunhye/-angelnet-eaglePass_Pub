@@ -1,5 +1,4 @@
 @media screen and (max-width: 400px) {
-  /* 고도화 */
   header {
     padding: 0 2rem;
   }
@@ -7,7 +6,6 @@
   .container {
     padding: 8rem 2rem 10rem;
   }
-  /* 고도화 끝 */
 
   .search-box.search-date > label {
     width: 100%;
@@ -19,9 +17,7 @@
     width: 100%;
   }
 
-  /* 고도화 */
   .history .list_wrap {
     height: calc(100% - 150px);
   }
-  /* 고도화 끝 */
 }
