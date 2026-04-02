@@ -3,7 +3,7 @@
     padding: 0 2rem;
   }
 
-  .container {
+  .container:not(.scan) {
     padding: 8rem 2rem 10rem;
   }
 
