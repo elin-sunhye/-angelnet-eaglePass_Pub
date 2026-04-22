@@ -1015,7 +1015,6 @@ input {
 
   width: 100%;
 }
-/* 20260401 */
 .scan__qr {
   display: flex;
   justify-content: center;
@@ -1024,7 +1023,6 @@ input {
 
   width: 80%;
 }
-/* 20260401 끝 */
 .scan__qr span {
   display: inline-block;
 
@@ -1194,6 +1192,7 @@ input {
   width: 2rem;
 }
 
+/* 202260422 */
 /* 상품구매 */
 .product {
   position: relative;
@@ -1203,7 +1202,6 @@ input {
   box-sizing: border-box;
   border-radius: 1rem;
   width: 100%;
-  height: 18rem;
 
   background: url('/img/assets/img_ticket_bg.svg') no-repeat center center /
     cover;
@@ -1219,27 +1217,6 @@ input {
 .product:last-of-type {
   margin-bottom: 0;
 }
-.product::before,
-.product::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-
-  bottom: 30%;
-
-  border-radius: 50%;
-
-  width: 3rem;
-  aspect-ratio: 1 / 1;
-  background-color: var(--gray-4);
-  z-index: 1;
-}
-.product::before {
-  left: -1.5rem;
-}
-.product::after {
-  right: -1.5rem;
-}
 .name {
   font-size: 2rem;
   font-weight: bold;
@@ -1250,9 +1227,10 @@ input {
   position: relative;
   height: 60%;
   box-sizing: border-box;
-  padding: 2rem 3rem 0;
+  padding: 2rem 3rem;
   border-bottom: 0.1rem dashed var(--gray-2);
 }
+/* 202260422 끝 */
 .option-info-box span {
   display: inline-block;
   width: 100%;
@@ -1289,10 +1267,34 @@ input {
   background: url('/img/assets/ico_label_premium.svg') no-repeat center center /
     cover;
 }
+/* 202260422 */
 .check-point {
+  position: relative;
   height: 40%;
-  padding: 1.5rem 3rem 0;
+  padding: 1.5rem 3rem;
 }
+.check-point::before,
+.check-point::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+
+  top: -1.5rem;
+
+  border-radius: 50%;
+
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--gray-4);
+  z-index: 1;
+}
+.check-point::before {
+  left: -1.5rem;
+}
+.check-point::after {
+  right: -1.5rem;
+}
+/* 202260422 끝 */
 .check-point p {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -1307,18 +1309,23 @@ input {
   border-radius: 15px;
   background-color: white;
 }
+/* 202260422 */
 .purchase_box div {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 .purchase_box div:nth-of-type(2) {
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
+}
+.purchase_box div:nth-of-type(3) {
+  margin-bottom: 2rem;
 }
 .purchase_box div p {
   position: relative;
-  width: 9rem;
+  width: 10.5rem;
 }
+/* 202260422 끝 */
 .purchase_box div p::before {
   content: ':';
   position: absolute;
@@ -1328,6 +1335,11 @@ input {
   display: inline-block;
   margin: 0 0.5rem;
 }
+/* 202260422 */
+.purchase_box div span {
+  width: calc(100% - 10.5rem);
+}
+/* 202260422 끝 */
 .purchase_box div:nth-of-type(2) span {
   font-weight: bold;
 }
@@ -1335,7 +1347,90 @@ input {
   color: #a3a3a3;
   background-color: var(--gray-4);
 }
+/* 202260422 */
+/* 상품결제 결과 */
+.purchase-result-box {
+  margin-top: 10px;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  background-color: white;
+}
 
+.success-ico-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 20rem;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+.fail .success-ico-box {
+  background-color: #a24445;
+}
+.success-ico-box::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  background: url('/img/assets/ico_confirm.svg') no-repeat center center /
+    contain;
+}
+.fail .success-ico-box::after {
+  background: url('/img/assets/ico_fail.svg') no-repeat center center / contain;
+}
+
+.result-txt {
+  margin: 3rem 0 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.result-txt::after {
+  content: '결제에 성공하였습니다.';
+  display: inline-block;
+}
+
+.fail .result-txt::after {
+  content: '결제에 실패하였습니다.';
+}
+
+.result-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.result-detail p {
+  display: flex;
+}
+
+.result-detail p span {
+  display: inline-block;
+}
+
+.result-detail p span:first-of-type {
+  width: 7rem;
+}
+
+.result-detail p span:last-of-type {
+  width: calc(100% - 7rem);
+}
+
+.btn_box {
+  margin-top: 2rem;
+}
+/* 202260422 끝 */
+S
+/*  */
 .footer-link {
   display: inline-block;
   margin: 0 1.2rem;

@@ -26,7 +26,7 @@
       <header>
         <h2>
           <img src="./img/assets/ico_left_arrow.svg" alt="왼쪽 화살표 아이콘" />
-          <p>상품결제</p>
+          <p>결제결과</p>
         </h2>
         <div class="right">
           <a href="./main.html">
@@ -92,46 +92,23 @@
         </ul>
       </nav>
       <div class="container">
-        <div class="product prefer on">
-          <div class="option-info-box">
-            <p class="name">정기권 3개월 (일 60분)</p>
-            <span>(주중 60분 주말 50분 이용)</span>
-          </div>
-          <div class="check-point">
-            <p>특판가 220,000 (정가 250,000)</p>
-            <span class="period">2026년 3월 31일 까지</span>
-          </div>
-        </div>
-
-        <div class="purchase_box">
-          <div>
-            <p>선택 이용권</p>
-            <span>쿠폰 30장 (일 50분)</span>
-          </div>
-          <div>
-            <p>구매 금액</p>
-            <span>270,000원</span>
-          </div>
-          <!-- 202260422 -->
-          <div>
-            <p>이용 시작 일자</p>
-            <span
-              ><label> <input type="date" name="startDt" /> </label
-            ></span>
+        <div class="purchase-result-box fail">
+          <div class="success-ico-box"></div>
+          <div class="result-box">
+            <p class="result-txt"></p>
+            <div class="result-detail">
+              <p><span>주문번호</span><span>123456789</span></p>
+              <p><span>주문날짜</span><span>2026.04.03</span></p>
+              <p><span>상품명</span><span>정기권 3개월 (일 60분)</span></p>
+              <p><span>결제금액</span><span>220,000</span></p>
+            </div>
           </div>
 
           <div class="btn_box">
-            <button
-              type="button"
-              onclick="location.href = 'product_purchase_result.html'"
-            >
-              결제
-            </button>
             <button type="button" onclick="location.href = 'product.html'">
-              취소
+              돌아가기
             </button>
           </div>
-          <!-- 202260422 끝 -->
         </div>
       </div>
     </div>
