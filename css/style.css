@@ -1192,7 +1192,6 @@ input {
   width: 2rem;
 }
 
-/* 202260422 */
 /* 상품구매 */
 .product {
   position: relative;
@@ -1230,7 +1229,6 @@ input {
   padding: 2rem 3rem;
   border-bottom: 0.1rem dashed var(--gray-2);
 }
-/* 202260422 끝 */
 .option-info-box span {
   display: inline-block;
   width: 100%;
@@ -1267,7 +1265,6 @@ input {
   background: url('/img/assets/ico_label_premium.svg') no-repeat center center /
     cover;
 }
-/* 202260422 */
 .check-point {
   position: relative;
   height: 40%;
@@ -1294,7 +1291,6 @@ input {
 .check-point::after {
   right: -1.5rem;
 }
-/* 202260422 끝 */
 .check-point p {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -1309,7 +1305,6 @@ input {
   border-radius: 15px;
   background-color: white;
 }
-/* 202260422 */
 .purchase_box div {
   display: flex;
   justify-content: flex-start;
@@ -1325,7 +1320,6 @@ input {
   position: relative;
   width: 10.5rem;
 }
-/* 202260422 끝 */
 .purchase_box div p::before {
   content: ':';
   position: absolute;
@@ -1335,11 +1329,9 @@ input {
   display: inline-block;
   margin: 0 0.5rem;
 }
-/* 202260422 */
 .purchase_box div span {
   width: calc(100% - 10.5rem);
 }
-/* 202260422 끝 */
 .purchase_box div:nth-of-type(2) span {
   font-weight: bold;
 }
@@ -1347,7 +1339,175 @@ input {
   color: #a3a3a3;
   background-color: var(--gray-4);
 }
-/* 202260422 */
+/* 20260531 */
+/* 아코디언 */
+.accordion-wrap {
+  max-width: 640px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.acc-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  transition: box-shadow 0.25s;
+}
+.acc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+.acc-header:focus-visible {
+  outline: 2px solid var(--main-color);
+  outline-offset: -2px;
+  border-radius: var(--radius);
+}
+
+.acc-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.acc-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: var(-light);
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+}
+.acc-icon svg {
+  display: block;
+}
+
+.acc-title-wrap {
+  min-width: 0;
+}
+.acc-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.acc-title .sub {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-left: 4px;
+}
+.acc-toggle {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.chevron {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open {
+  border: 1px solid var(--main-color);
+}
+.is-open .chevron {
+  transform: rotate(180deg);
+}
+.label-open {
+  display: none;
+}
+.label-close {
+  display: inline;
+}
+.is-open .label-open {
+  display: inline;
+}
+.is-open .label-close {
+  display: none;
+}
+.is-open .acc-header {
+  background-color: var(--gray-4);
+}
+.acc-body {
+  display: none; /* jQuery toggle will handle */
+  border-top: 1.5px solid var(--main-color);
+}
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0 18px;
+  display: table; /* keep as real table inside div */
+}
+.info-table tr td {
+  padding: 6px 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  vertical-align: top;
+  border-bottom: 1px solid var(--gray-4);
+}
+.info-table tr:last-child td {
+  border-bottom: none;
+}
+.table-wrap {
+  padding: 4px 18px 2px;
+}
+
+.td-label {
+  color: var(--text-sub);
+  font-weight: 500;
+  white-space: nowrap;
+  padding-right: 16px;
+  width: 120px;
+}
+.td-value {
+  color: var(--text-main);
+  font-weight: 400;
+  word-break: break-all;
+  width: calc(100% - 120px);
+}
+.acc-notice {
+  margin: 10px 18px 16px;
+  background: var(--gray-4);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.notice-icon {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.notice-text {
+  font-size: 12.5px;
+  color: var(--text-sub);
+  line-height: 1.6;
+}
+.notice-text strong {
+  color: var(--main-color);
+  font-weight: 600;
+}
+/* 끝 */
+
 /* 상품결제 결과 */
 .purchase-result-box {
   margin-top: 10px;
@@ -1355,7 +1515,6 @@ input {
   border-radius: 15px;
   background-color: white;
 }
-
 .success-ico-box {
   position: relative;
   display: flex;
@@ -1428,9 +1587,6 @@ input {
 .btn_box {
   margin-top: 2rem;
 }
-/* 202260422 끝 */
-S
-/*  */
 .footer-link {
   display: inline-block;
   margin: 0 1.2rem;

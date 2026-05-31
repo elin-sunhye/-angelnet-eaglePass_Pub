@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/response.css" />
+
+    <!-- 20260531 -->
+    <script src="./js/jquery.3.1.1.js"></script>
+    <!-- 끝 -->
   </head>
   <body>
     <div class="wrap">
@@ -112,7 +116,6 @@
             <p>구매 금액</p>
             <span>270,000원</span>
           </div>
-          <!-- 202260422 -->
           <div>
             <p>이용 시작 일자</p>
             <span
@@ -131,9 +134,223 @@
               취소
             </button>
           </div>
-          <!-- 202260422 끝 -->
+        </div>
+
+        <!-- 20260531 -->
+        <!-- 아코디언 -->
+        <div class="accordion-wrap">
+          <div class="acc-card" id="card-franchise">
+            <button
+              class="acc-header"
+              aria-expanded="true"
+              aria-controls="body-franchise"
+            >
+              <span class="acc-header-left">
+                <span class="acc-icon">
+                  <!-- store icon -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#2e7d50"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M3 9l1-5h16l1 5" />
+                    <path
+                      d="M3 9a1 1 0 0 0 1 1h.5A1.5 1.5 0 0 0 6 8.5V9a1.5 1.5 0 0 0 3 0 1.5 1.5 0 0 0 3 0 1.5 1.5 0 0 0 3 0V8.5A1.5 1.5 0 0 0 16.5 10H17a1 1 0 0 0 1-1"
+                    />
+                    <path d="M5 21V10M19 21V10" />
+                    <path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6" />
+                    <line x1="3" y1="21" x2="21" y2="21" />
+                  </svg>
+                </span>
+                <span class="acc-title-wrap">
+                  <span class="acc-title"
+                    >가맹점 정보
+                    <span class="sub">(판매자 : 그린힐 골프장)</span></span
+                  >
+                </span>
+              </span>
+              <span class="acc-toggle" aria-hidden="true">
+                <span class="label-close">펼치기</span>
+                <span class="label-open">접기</span>
+                <svg
+                  class="chevron"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="18 15 12 9 6 15" />
+                </svg>
+              </span>
+            </button>
+
+            <div class="acc-body" id="body-franchise" role="region">
+              <div class="table-wrap">
+                <table class="info-table">
+                  <tbody>
+                    <tr>
+                      <td class="td-label">상호명</td>
+                      <td class="td-value">그린힐 골프장</td>
+                    </tr>
+                    <tr>
+                      <td class="td-label">대표자</td>
+                      <td class="td-value">홍길동</td>
+                    </tr>
+                    <tr>
+                      <td class="td-label">사업자등록번호</td>
+                      <td class="td-value">123-45-67890</td>
+                    </tr>
+                    <tr>
+                      <td class="td-label">주소</td>
+                      <td class="td-value">
+                        경기도 용인시 처인구 모현읍 골프장로 123
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-label">고객센터</td>
+                      <td class="td-value">031-123-4567</td>
+                    </tr>
+                    <tr>
+                      <td class="td-label">통신판매업신고번호</td>
+                      <td class="td-value">제 2026-용인처인-0001 호</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="acc-notice">
+                <span class="notice-icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#2e7d50"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>
+                </span>
+                <p class="notice-text">
+                  본 상품의 실제 판매자는
+                  <strong>'그린힐 골프장'</strong> 입니다.<br />
+                  구매 및 이용 관련 문의는 위 고객센터로 연락해 주세요.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-card" id="card-platform">
+            <button
+              class="acc-header"
+              aria-expanded="true"
+              aria-controls="body-platform"
+            >
+              <span class="acc-header-left">
+                <span class="acc-icon">
+                  <!-- building icon -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#2e7d50"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="3" width="7" height="18" />
+                    <rect x="14" y="9" width="7" height="12" />
+                    <line x1="3" y1="21" x2="21" y2="21" />
+                    <line x1="7" y1="7" x2="7" y2="7" />
+                    <line x1="7" y1="11" x2="7" y2="11" />
+                    <line x1="7" y1="15" x2="7" y2="15" />
+                    <line x1="18" y1="13" x2="18" y2="13" />
+                    <line x1="18" y1="17" x2="18" y2="17" />
+                  </svg>
+                </span>
+                <span class="acc-title-wrap">
+                  <span class="acc-title"
+                    >플랫폼 정보
+                    <span class="sub">(통신판매중개업자)</span></span
+                  >
+                </span>
+              </span>
+              <span class="acc-toggle" aria-hidden="true">
+                <span class="label-close">펼치기</span>
+                <span class="label-open">접기</span>
+                <svg
+                  class="chevron"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="18 15 12 9 6 15" />
+                </svg>
+              </span>
+            </button>
+
+            <div class="acc-body" id="body-platform" role="region">
+              <div class="table-wrap">
+                <table class="info-table">
+                  <tbody>
+                    <tr>
+                      <td class="td-label">상호명</td>
+                      <td class="td-value">(주)골프예약플랫폼</td>
+                    </tr>
+                    <tr>
+                      <td class="td-label">사업자등록번호</td>
+                      <td class="td-value">987-65-43210</td>
+                    </tr>
+                    <tr>
+                      <td class="td-label">통신판매업신고번호</td>
+                      <td class="td-value">제 2025-서울강남-0000 호</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="acc-notice">
+                <span class="notice-icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#2e7d50"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>
+                </span>
+                <p class="notice-text">
+                  당사는 통신판매중개업자로서, 통신판매의 당사자가 아니며<br />
+                  상품의 예약, 이용 및 환불 등에 대한 의무와 책임은 각
+                  판매자에게 있습니다.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="./js/common.js"></script>
+    <!-- 끝 -->
   </body>
 </html>

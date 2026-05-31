@@ -20,4 +20,29 @@
   .history .list_wrap {
     height: calc(100% - 150px);
   }
+
+  /* 20260531 */
+  /* 아코디언 */
+  .table-wrap {
+    padding: 4px 14px 2px;
+  }
+  .acc-notice {
+    margin: 8px 14px 14px;
+  }
+  .td-label {
+    font-size: 13px;
+  }
+  .td-value {
+    font-size: 13px;
+  }
+  .acc-title {
+    font-size: 14px;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .acc-title .sub {
+    font-size: 12px;
+    margin-left: 0;
+  }
+  /* 끝 */
 }

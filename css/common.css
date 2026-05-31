@@ -12,6 +12,12 @@
   --gray-3: #ccc;
   --gray-4: #f6f6f6;
   --white: #fff;
+  /* 20260531 */
+  --green-mid: #d0eadb;
+  --text-main: #1a2e22;
+  --text-sub: #4a6358;
+  --text-mute: #7a9988;
+  /* 끝 */
 }
 
 html,

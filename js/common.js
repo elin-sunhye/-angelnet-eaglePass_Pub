@@ -232,3 +232,27 @@ $(document).on('click', '.btn_transfer', function (e) {
   // purchase_box 활성화
   $('.gray_box.purchase_box.two').addClass('on');
 });
+
+// 20260531
+// 아코디언
+// 초기 상태: 이미 열려있는 카드는 body 표시
+$('.acc-card.is-open .acc-body').show();
+
+$('.acc-header').on('click', function () {
+  const $card = $(this).closest('.acc-card');
+  const $body = $card.find('.acc-body');
+  const isOpen = $card.hasClass('is-open');
+
+  if (isOpen) {
+    // 닫기
+    $body.slideUp(280);
+    $card.removeClass('is-open');
+    $(this).attr('aria-expanded', 'false');
+  } else {
+    // 열기
+    $body.slideDown(280);
+    $card.addClass('is-open');
+    $(this).attr('aria-expanded', 'true');
+  }
+});
+// 끝
